@@ -1,26 +1,27 @@
 # Global Tech Career
 
-Bilingual (English/Spanish), responsive static landing page.
+Bilingual (English/Spanish), responsive static landing page for The International Tech Career Playbook.
 
-## Files
-- `index.html` — content, metadata and sections.
-- `styles.css` — responsive design.
-- `script.js` — language switcher, mobile navigation and current year.
+## Site files
+- `index.html` — landing page content, SEO metadata, Open Graph tags, and Course structured data.
+- `styles.css` — responsive design and course curriculum styling.
+- `script.js` — language switcher, mobile navigation, dynamic metadata, and current year.
 - `favicon.svg` — brand mark.
+- `robots.txt` and `sitemap.xml` — search crawler instructions and sitemap.
 
-## Deploy with Cloudflare Pages
-1. In Cloudflare, open **Workers & Pages**.
-2. Select **Create application** → **Pages** → **Connect to Git**.
-3. Choose the `andreinavas505/globaltechcareer` repository.
-4. Choose framework preset **None** and leave the build command empty.
-5. Set the build output directory to `/` (repository root).
-6. Deploy, then open the Pages project and add `globaltechcareer.com` under **Custom domains**.
-7. Follow the domain setup prompts and wait for HTTPS provisioning.
+## Course structure
+- Free preview: Start Here — Your International Tech Career Roadmap.
+- Module 1: Career Strategy & Job Search Planning.
+- Module 2: Resume & Professional Profile.
+- Module 3: Interview Preparation.
+- Module 4: AI-Powered Job Search Workflow.
+- Eight paid course lessons across the four modules.
 
-## Before launch
-- Replace the launch CTA with the actual Hotmart checkout URL when available.
-- Verify the contact email is configured before relying on it.
-- Review the brand, privacy requirements and legal terms before commercial launch.
-- No job, interview, salary or ATS outcomes are guaranteed.
+## Deployment
+The site is configured as a static site. The existing Cloudflare Pages deployment can publish updates from the connected GitHub repository.
 
-This is an initial draft for review, not a final commercial release.
+## Links
+- Course checkout: https://pay.hotmart.com/I108206494I
+- Free preview: https://hotmart.com/en/club/jaime-andrei-navas-melendez/products/8816304
+
+The page avoids promising interviews, employment, salary outcomes, or hiring timelines. Hotmart displays current pricing and payment options based on the visitor's location.

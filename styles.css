@@ -71,3 +71,19 @@ h1,h2,h3,.brand,.button{font-family:var(--display)}
 .product-info .button{width:100%;text-align:center}
 @media(max-width:900px){.module-grid{grid-template-columns:1fr;gap:13px}.module-card{min-height:0}.module-card h3{margin-top:18px}}
 @media(max-width:650px){.module-card{padding:23px;border-radius:18px}.module-card h3{font-size:20px}.module-card p{font-size:12px}}
+.module-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.module-card{min-height:0}
+.lesson-list{list-style:none;padding:0;margin:20px 0 0;border-top:1px solid #ececf6}
+.lesson-list li{position:relative;padding:11px 0 11px 20px;border-bottom:1px solid #f0f0f7;font-size:11px;line-height:1.55;color:#465168}
+.lesson-list li:before{content:"";position:absolute;left:2px;top:17px;width:7px;height:7px;border-radius:50%;background:#7867ed}
+.module-card:nth-child(2) .lesson-list li:before{background:#20b99a}.module-card:nth-child(3) .lesson-list li:before{background:#ff946e}.module-card:nth-child(4) .lesson-list li:before{background:#6c5ce7}
+.preview-card{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:19px;margin:0 0 27px;padding:23px 26px;border:1px solid #dff3ed;border-radius:18px;background:linear-gradient(110deg,#f0fbf7,#fff 60%,#f4f1ff)}
+.preview-icon{display:grid;place-items:center;width:46px;height:46px;border-radius:15px;background:#20b99a;color:#fff;font-size:17px;box-shadow:0 7px 20px #20b99a30}
+.preview-card small{font-size:9px;letter-spacing:.11em;font-weight:800;color:#16866f}
+.preview-card h3{margin:5px 0;font-size:17px;letter-spacing:-.035em}
+.preview-card p{margin:0;color:#68738a;font-size:11px;line-height:1.6}
+.preview-card .text-link{white-space:nowrap;color:#6657d7}
+.secondary-cta{display:block;margin-top:14px;text-align:center;color:#6558c8;font-size:11px;font-weight:700}
+.product-info .note{display:block;margin-top:12px;line-height:1.6}
+@media(max-width:900px){.module-grid{grid-template-columns:1fr}.preview-card{grid-template-columns:auto 1fr}.preview-card>.text-link{grid-column:2}}
+@media(max-width:650px){.preview-card{padding:19px;gap:13px;border-radius:16px}.preview-icon{width:40px;height:40px}.preview-card h3{font-size:15px}.preview-card p{font-size:10px}.preview-card>.text-link{font-size:11px}}
