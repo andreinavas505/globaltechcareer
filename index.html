@@ -37,7 +37,7 @@
         "name": "The Cloud & DevOps Job Search Playbook",
         "description": "A self-paced online course for mid-level and senior Cloud, DevOps, SRE, Platform, and Infrastructure engineers. The four modules cover career strategy and role assessment, evidence-based resume and profile positioning, interview preparation and offer evaluation, and an AI-supported job search workflow.",
         "url": "https://globaltechcareer.com/",
-        "inLanguage": ["en-US", "es"],
+        "inLanguage": "en-US",
         "educationalLevel": "Intermediate to advanced",
         "keywords": [
           "Cloud and DevOps job search playbook",
@@ -230,9 +230,6 @@ footer [class*="text-slate-500"]{color:#c5d2df!important}
       </nav>
 
       <div class="flex items-center gap-3">
-        <button id="langToggleBtn" type="button" class="px-2.5 py-1.5 rounded-md border border-slate-700 bg-slate-900/90 text-xs font-mono text-slate-300 hover:border-emerald-500/50 hover:text-white transition">
-          EN / ES
-        </button>
         <a href="https://pay.hotmart.com/I108206494I?checkoutMode=10" target="_blank" rel="noopener noreferrer" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold text-xs sm:text-sm px-4 py-2 rounded-lg transition inline-flex items-center justify-center">
           <span data-i18n="nav_cta">Get Playbook — $47</span>
         </a>
@@ -525,7 +522,6 @@ footer [class*="text-slate-500"]{color:#c5d2df!important}
         <div class="grid sm:grid-cols-3 gap-4 pt-4 border-t border-slate-800 text-xs font-mono text-slate-400">
           <div>✓ NO FAKE HIRING GUARANTEES</div>
           <div>✓ PRODUCTION-GRADE TEMPLATES</div>
-          <div>✓ BILINGUAL ACCESS (EN / ES)</div>
         </div>
       </div>
     </section>
@@ -572,10 +568,6 @@ footer [class*="text-slate-500"]{color:#c5d2df!important}
                 <li class="flex items-center gap-2.5">
                   <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 3"/></svg>
                   <span><strong>Copy-Ready AI Prompts & Knowledge Base Workflow</strong> for 3-minute role audits</span>
-                </li>
-                <li class="flex items-center gap-2.5">
-                  <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 3"/></svg>
-                  <span><strong>Full Bilingual Edition Included</strong> (English & Spanish materials)</span>
                 </li>
                 <li class="flex items-center gap-2.5">
                   <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 3"/></svg>
@@ -824,71 +816,6 @@ footer [class*="text-slate-500"]{color:#c5d2df!important}
       }
     });
 
-    // 4. Bilingual Toggle (EN / ES)
-    let currentLang = 'en';
-    const translations = {
-      en: {
-        top_banner: 'US LAUNCH EDITION: Complete 4-Module System + ATS Templates + AI Prompt Engine — Now $47 USD (Instant Access)',
-        nav_problem: 'Why Resumes Fail',
-        nav_demo: 'Impact Transformer',
-        nav_curriculum: '4-Module Curriculum',
-        nav_pricing: 'Pricing & Guarantee',
-        nav_cta: 'Get Playbook — $47',
-        hero_badge: 'BUILT FOR INFRASTRUCTURE, CLOUD, DEVOPS, SRE & PLATFORM ENGINEERS',
-        hero_title: 'Why are less experienced engineers landing <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">$180k+ Cloud & DevOps roles</span> while your application pipeline is still stuck in the same pattern?',
-        hero_subtitle: 'Stop blind-applying to 50 job boards a week. A systematic, field-tested playbook to translate your daily infrastructure work into undeniable business impact, pass high-stakes US behavioral screens, and get seen by the right hiring teams.',
-        hero_cta_primary: 'Get Instant Access — $47 USD',
-        hero_cta_secondary: 'Explore Free Course Preview',
-        trust_1: '7-Day 100% Money-Back Guarantee',
-        trust_2: 'Secure Checkout: Visa, Mastercard, PayPal & Klarna',
-        trust_3: 'Instant Self-Paced Access',
-        prob_eyebrow: '01 / THE BOTTLENECK',
-        prob_title: 'The US tech hiring market changed. Sending generic resumes no longer works.',
-        prob_desc: 'Every remote Cloud, DevOps, and SRE posting receives 800+ applications within 24 hours. Hiring managers do not reject you because you lack technical skill—they reject you because your signal is buried under generic tool lists and indistinct messaging.',
-        demo_eyebrow: '02 / TURN EXPERIENCE INTO EVIDENCE',
-        demo_title: 'See the Difference: Task-Based vs. Evidence-Based Positioning',
-        curr_eyebrow: '03 / THE COMPLETE SYSTEM',
-        curr_title: '4 Focused Modules. 8 Actionable Lessons. Zero Fluff.',
-        price_heading: 'Build Your Next Career Move With Structure'
-      },
-      es: {
-        top_banner: 'EDICIÓN DE LANZAMIENTO: Sistema Completo de 4 Módulos + Plantillas ATS + Motor de Prompts IA — $47 USD (Acceso Inmediato)',
-        nav_problem: 'El Problema',
-        nav_demo: 'Transformador de Impacto',
-        nav_curriculum: 'Currículum (4 Módulos)',
-        nav_pricing: 'Precio y Garantía',
-        nav_cta: 'Obtener Playbook — $47',
-        hero_badge: 'DISEÑADO PARA INGENIEROS DE INFRAESTRUCTURA, CLOUD, DEVOPS, SRE Y PLATAFORMA',
-        hero_title: '¿Por qué ingenieros con menos experiencia consiguen <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">roles Cloud & DevOps de $180k+</span> mientras tu pipeline de aplicaciones sigue atrapado en el mismo patrón?',
-        hero_subtitle: 'Deja de postular a ciegas. Un playbook práctico y sistemático para traducir tu trabajo técnico diario en evidencia de impacto medible, superar evaluaciones conductuales en EE. UU. y lograr que te vean los equipos correctos.',
-        hero_cta_primary: 'Obtener Acceso Inmediato — $47 USD',
-        hero_cta_secondary: 'Ver Vista Previa Gratuita',
-        trust_1: 'Garantía de Reembolso de 7 Días',
-        trust_2: 'Pago Seguro: Visa, Mastercard, PayPal y Klarna',
-        trust_3: 'Acceso Inmediato (EN / ES)',
-        prob_eyebrow: '01 / EL CUELLO DE BOTELLA',
-        prob_title: 'El mercado tech en EE. UU. cambió. Enviar CVs genéricos ya no funciona.',
-        prob_desc: 'Cada vacante remota de Cloud, DevOps o SRE recibe más de 800 postulaciones en 24 horas. No te descartan por falta de nivel técnico, sino porque tu impacto queda oculto detrás de listas de herramientas genéricas y mensajes poco distintos.',
-        demo_eyebrow: '02 / CONVIERTE EXPERIENCIA EN EVIDENCIA',
-        demo_title: 'Compara la Diferencia: CV de Tareas vs. CV Basado en Evidencia',
-        curr_eyebrow: '03 / EL SISTEMA COMPLETO',
-        curr_title: '4 Módulos Enfocados. 8 Lecciones Prácticas. Cero Relleno.',
-        price_heading: 'Construye tu Próximo Paso Profesional con Estructura'
-      }
-    };
-
-    const langToggleBtn = document.getElementById('langToggleBtn');
-    langToggleBtn.addEventListener('click', () => {
-      currentLang = currentLang === 'en' ? 'es' : 'en';
-      const dict = translations[currentLang];
-      document.querySelectorAll('[data-i18n]').forEach((el) => {
-        const key = el.getAttribute('data-i18n');
-        if (dict[key]) {
-          el.innerHTML = dict[key];
-        }
-      });
-      langToggleBtn.textContent = currentLang === 'en' ? 'EN / ES' : 'ES / EN';
-    });
   </script>
 </body>
 </html>
