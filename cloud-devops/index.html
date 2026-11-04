@@ -214,7 +214,7 @@ footer [class*="text-slate-500"]{color:#c5d2df!important}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
-  <link rel="stylesheet" href="/assets/gtc-design-system.css?v=20261104h">
+  
   <style>/* Page navigation stays visible without JavaScript. */
 .gtc-enhanced-hero{background:linear-gradient(115deg,rgba(4,19,36,.97),rgba(9,48,75,.92))!important;color:#fff!important;position:relative;isolation:isolate;overflow:hidden}
 .gtc-enhanced-hero:after{content:"";position:absolute;z-index:-1;right:-7%;top:-45%;width:55%;height:190%;border:1px solid rgba(125,232,213,.2);border-radius:50%;box-shadow:0 0 0 28px rgba(125,232,213,.035),0 0 0 58px rgba(125,232,213,.025),0 0 90px rgba(22,199,178,.12)}
@@ -279,6 +279,47 @@ main#top>section:first-of-type.gtc-enhanced-hero p{color:#e5edf5!important}
 }
 </style>
   <link rel="stylesheet" href="/assets/gtc-design-system.css?v=20261104j">
+
+<style id="cloud-hero-final-fix">
+/* Cloud hero: render the photographic blue/teal treatment even if enhancement JS is delayed. */
+main#top>section:first-of-type.cloud-hero-banner{
+  background:
+    linear-gradient(90deg,rgba(4,17,32,.95) 0%,rgba(5,24,43,.82) 52%,rgba(5,24,43,.30) 100%),
+    url("https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?auto=format&fit=crop&w=2000&q=90") center 45%/cover no-repeat!important;
+  min-height:700px!important;display:flex!important;align-items:center!important;
+  position:relative!important;isolation:isolate!important;overflow:hidden!important;
+}
+main#top>section:first-of-type.cloud-hero-banner:before{
+  content:""!important;position:absolute!important;inset:0!important;z-index:1!important;
+  background:linear-gradient(90deg,rgba(4,17,32,.94),rgba(5,24,43,.55))!important;
+  background-image:linear-gradient(90deg,rgba(4,17,32,.94),rgba(5,24,43,.55))!important;
+}
+main#top>section:first-of-type.cloud-hero-banner>.max-w-5xl{
+  position:relative!important;z-index:2!important;text-align:left!important;
+  max-width:1160px!important;width:min(1160px,100%)!important;
+  margin:0 auto!important;padding:0!important;
+}
+main#top>section:first-of-type.cloud-hero-banner h1{
+  max-width:780px!important;font-size:clamp(38px,5vw,62px)!important;
+  line-height:1.06!important;letter-spacing:-.045em!important;color:#fff!important;
+}
+main#top>section:first-of-type.cloud-hero-banner p{color:#e5edf5!important}
+main#top>section:first-of-type.cloud-hero-banner>.gtc-hero-product{
+  position:absolute!important;z-index:3!important;right:clamp(28px,7vw,110px)!important;
+  top:50%!important;bottom:auto!important;transform:translateY(-50%)!important;
+  display:block!important;width:clamp(190px,22vw,290px)!important;height:auto!important;
+  max-height:78%!important;object-fit:contain!important;
+}
+@media(max-width:760px){
+ main#top>section:first-of-type.cloud-hero-banner{min-height:900px!important;padding:34px 22px 250px!important;background-position:62% center!important}
+ main#top>section:first-of-type.cloud-hero-banner>.max-w-5xl{width:100%!important}
+ main#top>section:first-of-type.cloud-hero-banner h1{font-size:clamp(34px,9vw,46px)!important}
+ main#top>section:first-of-type.cloud-hero-banner>.gtc-hero-product{
+   width:150px!important;right:22px!important;top:auto!important;bottom:18px!important;transform:none!important;
+ }
+}
+</style>
+
 </head>
 <body class="font-sans antialiased selection:bg-emerald-500 selection:text-slate-950 grid-bg min-h-screen flex flex-col">
 
@@ -874,7 +915,7 @@ main#top>section:first-of-type.gtc-enhanced-hero p{color:#e5edf5!important}
     });
 
   </script>
-  <script src="/assets/gtc-landing-enhancements.js?v=20261104h" defer></script>
+  <script src="/assets/gtc-landing-enhancements.js?v=20261104j" defer></script>
   <script src="/assets/gtc-analytics.js?v=20261104a" defer></script>
 </body>
 </html>
