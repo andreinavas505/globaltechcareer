@@ -278,29 +278,44 @@ main#top>section:first-of-type.gtc-enhanced-hero p{color:#e5edf5!important}
   main#top>section:first-of-type.gtc-enhanced-hero h1{font-size:clamp(34px,9vw,46px)!important}
 }
 </style>
-  <link rel="stylesheet" href="/assets/gtc-design-system.css?v=20261104j">
+  <link rel="stylesheet" href="/assets/gtc-design-system.css?v=20261104k">
 
 <style id="cloud-hero-final-fix">
-/* Cloud hero: render the photographic blue/teal treatment even if enhancement JS is delayed. */
+/* Cloud & DevOps hero — atmospheric blue/teal system aligned with Cybersecurity. */
 main#top>section:first-of-type.cloud-hero-banner{
   background:
-    linear-gradient(90deg,rgba(4,17,32,.95) 0%,rgba(5,24,43,.82) 52%,rgba(5,24,43,.30) 100%),
-    url("https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?auto=format&fit=crop&w=2000&q=90") center 45%/cover no-repeat!important;
-  min-height:700px!important;display:flex!important;align-items:center!important;
+    radial-gradient(ellipse at 82% 58%,rgba(0,190,190,.25) 0%,rgba(0,105,145,.13) 27%,transparent 54%),
+    radial-gradient(ellipse at 12% 18%,rgba(15,93,150,.30) 0%,transparent 48%),
+    linear-gradient(118deg,#06172b 0%,#082943 54%,#071b32 100%)!important;
+  min-height:650px!important;display:flex!important;align-items:center!important;
   position:relative!important;isolation:isolate!important;overflow:hidden!important;
+  padding:clamp(44px,6vw,82px)!important;
 }
+main#top>section:first-of-type.cloud-hero-banner>.gtc-hero-photo{display:none!important}
 main#top>section:first-of-type.cloud-hero-banner:before{
   content:""!important;position:absolute!important;inset:0!important;z-index:1!important;
-  background:linear-gradient(90deg,rgba(4,17,32,.94),rgba(5,24,43,.55))!important;
-  background-image:linear-gradient(90deg,rgba(4,17,32,.94),rgba(5,24,43,.55))!important;
+  pointer-events:none!important;opacity:.75!important;
+  background-image:
+    linear-gradient(rgba(125,232,213,.055) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(125,232,213,.055) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(4,17,32,.18),transparent 58%,rgba(4,17,32,.08))!important;
+  background-size:44px 44px,44px 44px,100% 100%!important;
+}
+main#top>section:first-of-type.cloud-hero-banner:after{
+  content:""!important;position:absolute!important;z-index:1!important;
+  width:min(76vw,760px)!important;height:min(76vw,760px)!important;
+  right:-12%!important;top:50%!important;transform:translateY(-50%)!important;
+  border:1px solid rgba(125,232,213,.19)!important;border-radius:50%!important;
+  box-shadow:0 0 0 28px rgba(125,232,213,.035),0 0 0 58px rgba(125,232,213,.025),0 0 90px rgba(22,199,178,.13)!important;
+  pointer-events:none!important;
 }
 main#top>section:first-of-type.cloud-hero-banner>.max-w-5xl{
   position:relative!important;z-index:2!important;text-align:left!important;
   max-width:1160px!important;width:min(1160px,100%)!important;
-  margin:0 auto!important;padding:0!important;
+  margin:0 auto!important;padding:0 300px 0 0!important;
 }
 main#top>section:first-of-type.cloud-hero-banner h1{
-  max-width:780px!important;font-size:clamp(38px,5vw,62px)!important;
+  max-width:760px!important;font-size:clamp(38px,5vw,62px)!important;
   line-height:1.06!important;letter-spacing:-.045em!important;color:#fff!important;
 }
 main#top>section:first-of-type.cloud-hero-banner p{color:#e5edf5!important}
@@ -308,14 +323,30 @@ main#top>section:first-of-type.cloud-hero-banner>.gtc-hero-product{
   position:absolute!important;z-index:3!important;right:clamp(28px,7vw,110px)!important;
   top:50%!important;bottom:auto!important;transform:translateY(-50%)!important;
   display:block!important;width:clamp(190px,22vw,290px)!important;height:auto!important;
-  max-height:78%!important;object-fit:contain!important;
+  max-height:76%!important;object-fit:contain!important;
+  filter:drop-shadow(0 24px 36px rgba(0,0,0,.48))!important;
 }
 @media(max-width:760px){
- main#top>section:first-of-type.cloud-hero-banner{min-height:900px!important;padding:34px 22px 250px!important;background-position:62% center!important}
- main#top>section:first-of-type.cloud-hero-banner>.max-w-5xl{width:100%!important}
- main#top>section:first-of-type.cloud-hero-banner h1{font-size:clamp(34px,9vw,46px)!important}
+ main#top>section:first-of-type.cloud-hero-banner{
+   min-height:790px!important;padding:30px 22px 178px!important;
+   background-position:center!important;align-items:flex-start!important;
+ }
+ main#top>section:first-of-type.cloud-hero-banner:after{
+   width:390px!important;height:390px!important;right:-210px!important;top:auto!important;bottom:-55px!important;transform:none!important;
+ }
+ main#top>section:first-of-type.cloud-hero-banner>.max-w-5xl{
+   width:100%!important;padding:0!important;margin:0!important;
+ }
+ main#top>section:first-of-type.cloud-hero-banner h1{
+   max-width:600px!important;font-size:clamp(34px,8.7vw,42px)!important;line-height:1.07!important;
+ }
+ main#top>section:first-of-type.cloud-hero-banner .mb-10{margin-bottom:20px!important}
+ main#top>section:first-of-type.cloud-hero-banner .mb-8{margin-bottom:18px!important}
+ main#top>section:first-of-type.cloud-hero-banner .px-8.py-4{padding:13px 18px!important}
+ main#top>section:first-of-type.cloud-hero-banner .px-6.py-4{padding:12px 16px!important}
  main#top>section:first-of-type.cloud-hero-banner>.gtc-hero-product{
-   width:150px!important;right:22px!important;top:auto!important;bottom:18px!important;transform:none!important;
+   width:132px!important;right:22px!important;top:auto!important;bottom:12px!important;
+   transform:none!important;max-height:165px!important;
  }
 }
 </style>
@@ -915,7 +946,7 @@ main#top>section:first-of-type.cloud-hero-banner>.gtc-hero-product{
     });
 
   </script>
-  <script src="/assets/gtc-landing-enhancements.js?v=20261104j" defer></script>
+  <script src="/assets/gtc-landing-enhancements.js?v=20261104k" defer></script>
   <script src="/assets/gtc-analytics.js?v=20261104a" defer></script>
 </body>
 </html>
