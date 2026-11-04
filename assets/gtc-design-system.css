@@ -126,3 +126,16 @@ body{background:#f7f9fc;color:var(--gtc-ink);font-family:Inter,system-ui,-apple-
  .gtc-hero-product{width:150px!important;right:22px!important;top:auto!important;bottom:18px!important;transform:none!important}
  .gtc-enhanced-hero h1{font-size:clamp(34px,9vw,46px)!important}
 }
+
+/* Navigation visibility and responsive consistency across playbooks */
+@media(max-width:800px){
+ .gtc-nav-inner{flex-wrap:wrap;padding:10px 14px;gap:8px}
+ .gtc-nav-links{display:flex!important;width:100%;overflow-x:auto;gap:18px;padding:5px 0 8px;scrollbar-width:thin}
+ .gtc-nav-links a:not(.gtc-nav-cta){display:inline-flex!important;white-space:nowrap}
+ .gtc-nav-cta{white-space:nowrap;flex:0 0 auto}
+}
+@media(max-width:560px){
+ .gtc-nav-inner{padding:9px 14px}
+ .gtc-nav-links{gap:15px}
+ .gtc-nav-links a{font-size:11px!important}
+}
