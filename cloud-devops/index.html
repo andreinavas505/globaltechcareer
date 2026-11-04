@@ -193,7 +193,7 @@ main#top>section:not(:first-of-type) [class*="border-amber-500"]{border-color:#f
 main#top>section:not(:first-of-type) [class*="border-cyan-500"]{border-color:#a5f3fc!important}
 main#top>section:not(:first-of-type) [class*="hover:bg-slate-800"]:hover{background:#e8f7f4!important;color:var(--navy)!important}
 main#top>section:not(:first-of-type) [class*="glow-emerald"]{box-shadow:0 12px 34px rgba(16,36,58,.08)!important}
-main#top>section:first-of-type{position:relative;isolation:isolate;display:flex;align-items:center;min-height:640px;background:linear-gradient(90deg,rgba(4,14,25,.90) 0%,rgba(4,14,25,.84) 52%,rgba(4,14,25,.62) 100%),url("assets/Global_Tech_Career_Hero_Corporate_v2.png") center/cover no-repeat!important;color:#fff!important}
+main#top>section:first-of-type{position:relative;isolation:isolate;display:flex;align-items:center;min-height:640px;background:#07182d!important;color:#fff!important}
 main#top>section:first-of-type>.max-w-5xl{position:relative;max-width:1160px!important;width:min(1160px,calc(100% - 40px))!important;margin-left:auto!important;margin-right:auto!important;padding:56px 345px 56px 0!important;text-align:left!important}
 main#top>section:first-of-type>.max-w-5xl:after{content:"";position:absolute;right:16px;top:50%;transform:translateY(-50%);width:260px;height:390px;background:url("assets/Global_Tech_Career_Product_Mockup_Transparent_2x.png") center/contain no-repeat;filter:drop-shadow(0 20px 28px rgba(0,0,0,.42)) drop-shadow(0 0 16px rgba(45,212,191,.12))}
 main#top>section:first-of-type>.max-w-5xl>*{text-align:left!important}
@@ -223,6 +223,16 @@ footer [class*="text-slate-500"]{color:#c5d2df!important}
 .gtc-enhanced-hero a{border-radius:10px}
 .gtc-market,.gtc-compare,.gtc-bottom-cta{font-family:Inter,system-ui,sans-serif}
 .gtc-market h2,.gtc-compare h2,.gtc-bottom-cta h2{letter-spacing:-.035em}
+/* Explicit stacking for the injected shared photo, blue overlay and product mockup. */
+main#top>section:first-of-type.gtc-enhanced-hero{background:#07182d!important}
+main#top>section:first-of-type.gtc-enhanced-hero.cloud-hero-banner:before{content:none!important}
+main#top>section:first-of-type.gtc-enhanced-hero>.gtc-hero-photo{z-index:0!important}
+main#top>section:first-of-type.gtc-enhanced-hero:after{
+ content:""!important;position:absolute!important;inset:0!important;z-index:1!important;pointer-events:none!important;
+ background:linear-gradient(90deg,rgba(4,17,32,.96) 0%,rgba(5,24,43,.88) 48%,rgba(5,24,43,.36) 100%)!important;
+}
+main#top>section:first-of-type.gtc-enhanced-hero>.max-w-5xl{z-index:2!important}
+main#top>section:first-of-type.gtc-enhanced-hero>.gtc-hero-product{z-index:2!important;display:block!important}
 /* Keep Cloud & DevOps on the same shared hero system as the other playbooks.
    Override legacy page-specific hero rules that forced a gray photographic treatment. */
 main#top>section:first-of-type.gtc-enhanced-hero{
