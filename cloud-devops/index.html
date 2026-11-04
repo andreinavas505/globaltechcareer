@@ -226,17 +226,25 @@ footer [class*="text-slate-500"]{color:#c5d2df!important}
 /* Explicit stacking for the injected shared photo, blue overlay and product mockup. */
 main#top>section:first-of-type.gtc-enhanced-hero{background:#07182d!important}
 main#top>section:first-of-type.gtc-enhanced-hero.cloud-hero-banner:before{content:none!important}
-main#top>section:first-of-type.gtc-enhanced-hero>.gtc-hero-photo{z-index:0!important}
+main#top>section:first-of-type.gtc-enhanced-hero>.gtc-hero-photo{display:none!important}
 main#top>section:first-of-type.gtc-enhanced-hero:after{
  content:""!important;position:absolute!important;inset:0!important;z-index:1!important;pointer-events:none!important;
  background:linear-gradient(90deg,rgba(4,17,32,.96) 0%,rgba(5,24,43,.88) 48%,rgba(5,24,43,.36) 100%)!important;
 }
 main#top>section:first-of-type.gtc-enhanced-hero>.max-w-5xl{z-index:2!important}
-main#top>section:first-of-type.gtc-enhanced-hero>.gtc-hero-product{z-index:2!important;display:block!important}
+main#top>section:first-of-type.gtc-enhanced-hero>.gtc-hero-product{
+  position:absolute!important;z-index:2!important;right:clamp(28px,7vw,110px)!important;
+  top:50%!important;bottom:auto!important;transform:translateY(-50%)!important;
+  display:block!important;width:clamp(190px,22vw,310px)!important;height:auto!important;
+  max-height:78%!important;object-fit:contain!important;
+  filter:drop-shadow(0 26px 38px rgba(0,0,0,.5))!important;
+}
 /* Keep Cloud & DevOps on the same shared hero system as the other playbooks.
    Override legacy page-specific hero rules that forced a gray photographic treatment. */
 main#top>section:first-of-type.gtc-enhanced-hero{
-  background:#07182d!important;
+  background:
+    linear-gradient(90deg,rgba(4,17,32,.97) 0%,rgba(5,24,43,.88) 48%,rgba(5,24,43,.38) 100%),
+    url("https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?auto=format&fit=crop&w=2000&q=90") center 45%/cover no-repeat!important;
   min-height:650px!important;
   padding:clamp(44px,6vw,88px)!important;
   display:flex!important;
@@ -264,7 +272,8 @@ main#top>section:first-of-type.gtc-enhanced-hero h1{
 }
 main#top>section:first-of-type.gtc-enhanced-hero p{color:#e5edf5!important}
 @media(max-width:760px){
-  main#top>section:first-of-type.gtc-enhanced-hero{min-height:700px!important;padding:34px 22px 250px!important}
+  main#top>section:first-of-type.gtc-enhanced-hero{min-height:700px!important;padding:34px 22px 250px!important;background-position:62% center!important}
+  main#top>section:first-of-type.gtc-enhanced-hero>.gtc-hero-product{width:150px!important;right:22px!important;top:auto!important;bottom:18px!important;transform:none!important;max-height:210px!important}
   main#top>section:first-of-type.gtc-enhanced-hero>.max-w-5xl{width:100%!important}
   main#top>section:first-of-type.gtc-enhanced-hero h1{font-size:clamp(34px,9vw,46px)!important}
 }
@@ -288,6 +297,7 @@ main#top>section:first-of-type.gtc-enhanced-hero p{color:#e5edf5!important}
   <main id="top" class="flex-grow">
     <!-- HERO SECTION -->
     <section class="relative pt-14 pb-20 sm:pt-20 sm:pb-24 px-4 sm:px-6 overflow-hidden cloud-hero-banner">
+      <img class="gtc-hero-product" src="/assets/Global_Tech_Career_Product_Mockup_Transparent_2x.png" alt="Global Tech Career Cloud & DevOps playbook preview" loading="eager">
       <div class="max-w-5xl mx-auto text-center">
         <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700/80 text-xs font-mono text-emerald-400 mb-6">
           <span>GTC / 001</span>
