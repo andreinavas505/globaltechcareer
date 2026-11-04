@@ -15,8 +15,12 @@ const data=pages[path]||pages['/cloud-devops'];
 const root=document.body;
 const header=document.createElement('header');header.className='gtc-nav';header.innerHTML='<div class="gtc-nav-inner"><a class="gtc-brand" href="/"><span class="gtc-mark">GTC</span>Global Tech Career</a><nav class="gtc-nav-links"><a href="/">All Playbooks</a><a href="#gtc-market-reality">Market Reality</a><a href="#gtc-deep-dive">What You Will Build</a><a href="#curriculum">Curriculum</a><a href="#faq">FAQ</a><a class="gtc-nav-cta" href="#curriculum">Explore Preview →</a></nav></div>';
 root.insertBefore(header,root.firstChild);
-const firstSection=root.querySelector('main section, body>section');
-if(firstSection){firstSection.id=firstSection.id||'gtc-hero';firstSection.classList.add('gtc-enhanced-hero');}
+const firstSection=root.querySelector('main .hero, main header.hero, main section.hero, main section#top, main section, body>section');
+if(firstSection){
+ firstSection.id=firstSection.id||'gtc-hero';
+ firstSection.classList.add('gtc-enhanced-hero');
+ firstSection.style.setProperty('--gtc-hero-image','url("https://images.unsplash.com/'+data.image+'?auto=format&fit=crop&w=1800&q=88")');
+}
 const market=document.createElement('section');market.className='gtc-market';market.id='gtc-market-reality';
 market.innerHTML='<div class="gtc-market-inner"><div><div class="gtc-kicker">The U.S. hiring reality</div><h2>The market is competitive. Your experience needs to be easy to evaluate.</h2><p>'+data.challenge+'</p></div><div class="gtc-market-grid">'+data.pain.map(p=>'<div class="gtc-market-item"><b>'+p[0]+'</b><span>'+p[1]+'</span></div>').join('')+'</div></div>';
 if(firstSection)firstSection.insertAdjacentElement('afterend',market);else root.insertBefore(market,header.nextSibling);
