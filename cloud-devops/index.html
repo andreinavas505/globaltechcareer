@@ -141,6 +141,18 @@
     .glow-emerald {
       box-shadow: 0 0 35px -5px rgba(16, 185, 129, 0.35);
     }
+    .cloud-hero-banner {
+      background: radial-gradient(ellipse at 78% 43%, #0e6872 0%, #0a344b 27%, transparent 58%), linear-gradient(112deg, #061321 0%, #092139 60%, #07182d 100%);
+      color: #ffffff;
+    }
+    .cloud-hero-banner::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background-image: linear-gradient(rgba(140,235,231,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(140,235,231,.05) 1px, transparent 1px);
+      background-size: 42px 42px;
+    }
   </style>
 
 <style id="gtc-from-scratch">
@@ -230,7 +242,7 @@ footer [class*="text-slate-500"]{color:#c5d2df!important}
 
   <main id="top" class="flex-grow">
     <!-- HERO SECTION -->
-    <section class="relative pt-14 pb-20 sm:pt-20 sm:pb-24 px-4 sm:px-6 overflow-hidden">
+    <section class="relative pt-14 pb-20 sm:pt-20 sm:pb-24 px-4 sm:px-6 overflow-hidden cloud-hero-banner">
       <div class="max-w-5xl mx-auto text-center">
         <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700/80 text-xs font-mono text-emerald-400 mb-6">
           <span>GTC / 001</span>
