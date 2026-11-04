@@ -19,7 +19,21 @@ const firstSection=root.querySelector('main .hero, main header.hero, main sectio
 if(firstSection){
  firstSection.id=firstSection.id||'gtc-hero';
  firstSection.classList.add('gtc-enhanced-hero');
- firstSection.style.setProperty('--gtc-hero-image','url("https://images.unsplash.com/'+data.image+'?auto=format&fit=crop&w=1800&q=88")');
+ const photo=document.createElement('img');
+ photo.className='gtc-hero-photo';
+ photo.src='https://images.unsplash.com/'+data.image+'?auto=format&fit=crop&w=2000&q=90';
+ photo.alt=data.alt;
+ photo.setAttribute('fetchpriority','high');
+ photo.setAttribute('decoding','async');
+ firstSection.insertBefore(photo,firstSection.firstChild);
+ if(!firstSection.querySelector('.visual,.gtc-hero-product')){
+  const product=document.createElement('img');
+  product.className='gtc-hero-product';
+  product.src='/assets/Global_Tech_Career_Product_Mockup_Transparent_2x.png';
+  product.alt='Global Tech Career playbook product preview';
+  product.loading='eager';
+  firstSection.appendChild(product);
+ }
 }
 const market=document.createElement('section');market.className='gtc-market';market.id='gtc-market-reality';
 market.innerHTML='<div class="gtc-market-inner"><div><div class="gtc-kicker">The U.S. hiring reality</div><h2>The market is competitive. Your experience needs to be easy to evaluate.</h2><p>'+data.challenge+'</p></div><div class="gtc-market-grid">'+data.pain.map(p=>'<div class="gtc-market-item"><b>'+p[0]+'</b><span>'+p[1]+'</span></div>').join('')+'</div></div>';
