@@ -115,7 +115,7 @@
     @media(max-width:650px){.nav{height:62px;padding:0 16px}.brand{font-size:13px}.nav>.btn{padding:10px 12px;font-size:11px}.hero{min-height:auto}.hero-inner{grid-template-columns:1fr;padding:58px 20px 45px}.hero h1{font-size:43px}.hero p{font-size:15px}.visual{min-height:360px;margin-top:5px}.orbit{width:310px;height:310px}.product-card{width:260px;min-height:330px;padding:20px}.product-card h2{font-size:22px}.one{right:0}.two{left:0}section{padding:62px 19px}.pain-grid,.feature-grid,.module-grid,.two-col,.demo{grid-template-columns:1fr}.included{grid-template-columns:1fr}.price-wrap{padding:28px 19px}.price{font-size:50px}.microtrust{gap:10px;font-size:9px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
   </style>
-  <link rel="stylesheet" href="/assets/gtc-design-system.css">
+  <link rel="stylesheet" href="/assets/gtc-design-system.css?v=20261103b">
   <style>body>header:not(.gtc-nav){display:none!important}
 .gtc-enhanced-hero{background:linear-gradient(115deg,rgba(4,19,36,.97),rgba(9,48,75,.92))!important;color:#fff!important;position:relative;isolation:isolate;overflow:hidden}
 .gtc-enhanced-hero:after{content:"";position:absolute;z-index:-1;right:-7%;top:-45%;width:55%;height:190%;border:1px solid rgba(125,232,213,.2);border-radius:50%;box-shadow:0 0 0 28px rgba(125,232,213,.035),0 0 0 58px rgba(125,232,213,.025),0 0 90px rgba(22,199,178,.12)}
@@ -125,7 +125,31 @@
 .gtc-market,.gtc-compare,.gtc-bottom-cta{font-family:Inter,system-ui,sans-serif}
 .gtc-market h2,.gtc-compare h2,.gtc-bottom-cta h2{letter-spacing:-.035em}
 </style>
-</head>
+<style id="gtc-contrast-hotfix">
+/* Contrast and image visibility hotfix */
+html,body{background:#f4f7fb!important;color:#142b42!important}
+body p,body li,body .muted,body small{color:#42566b!important}
+body h1,body h2,body h3,body h4{color:#102b46!important}
+body .hero,body header.hero,body .gtc-enhanced-hero{background:linear-gradient(115deg,#06172b 0%,#0c3853 72%,#087e78 100%)!important;color:#fff!important}
+body .hero h1,body .hero h2,body .hero h3,body .hero p,body .hero li,body .gtc-enhanced-hero h1,body .gtc-enhanced-hero h2,body .gtc-enhanced-hero h3,body .gtc-enhanced-hero p,body .gtc-enhanced-hero li{color:#fff!important}
+body .hero .tag,body .gtc-enhanced-hero .tag{color:#8debd9!important}
+body .card,body article.card,body section:not(.hero):not(.gtc-market):not(.gtc-bottom-cta){color:#142b42}
+body .card{background:#fff!important;border:1px solid #d9e4ef!important;box-shadow:0 10px 26px rgba(10,35,58,.055)}
+body .card h2,body .card h3,body section:not(.hero):not(.gtc-market):not(.gtc-bottom-cta) h2,body section:not(.hero):not(.gtc-market):not(.gtc-bottom-cta) h3{color:#102b46!important}
+body .card p,body section:not(.hero):not(.gtc-market):not(.gtc-bottom-cta) p,body section:not(.hero):not(.gtc-market):not(.gtc-bottom-cta) li{color:#42566b!important}
+.gtc-deep-visual{min-height:520px!important;background:#0b2944!important}
+.gtc-deep-visual img{display:block!important;opacity:1!important;visibility:visible!important}
+.gtc-market h2,.gtc-bottom-cta h2{color:#fff!important}
+.gtc-market p,.gtc-market span,.gtc-bottom-cta p{color:#e7f0f7!important}
+.gtc-compare h2{color:#102b46!important}
+.gtc-compare p{color:#42566b!important}
+.gtc-compare-cell{color:#263c52!important}
+.gtc-compare-cell.bad{color:#793e48!important}
+.gtc-compare-cell.good{color:#145c54!important}
+.gtc-evidence-grid p,.gtc-fit p,.gtc-difference p{color:#42566b!important}
+.gtc-nav a{color:#f1f6fa!important}
+@media(max-width:800px){.gtc-deep-visual{min-height:340px!important}}
+</style></head>
 <body>
   <div class="announcement">AI &amp; MLOPS CAREER EDITION &nbsp;•&nbsp; PRACTICAL FRAMEWORKS FOR YOUR NEXT MOVE</div>
   <header><div class="nav">
@@ -242,6 +266,6 @@
     <div>Independent educational resources. No job placement or hiring outcome is guaranteed.</div>
     <div><a href="https://globaltechcareer.com/">Main site</a> &nbsp;·&nbsp; AI &amp; MLOps Playbook</div>
   </div></footer>
-  <script src="/assets/gtc-landing-enhancements.js" defer></script>
+  <script src="/assets/gtc-landing-enhancements.js?v=20261103b" defer></script>
 </body>
 </html>
