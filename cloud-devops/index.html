@@ -223,6 +223,41 @@ footer [class*="text-slate-500"]{color:#c5d2df!important}
 .gtc-enhanced-hero a{border-radius:10px}
 .gtc-market,.gtc-compare,.gtc-bottom-cta{font-family:Inter,system-ui,sans-serif}
 .gtc-market h2,.gtc-compare h2,.gtc-bottom-cta h2{letter-spacing:-.035em}
+/* Keep Cloud & DevOps on the same shared hero system as the other playbooks.
+   Override legacy page-specific hero rules that forced a gray photographic treatment. */
+main#top>section:first-of-type.gtc-enhanced-hero{
+  background:#07182d!important;
+  min-height:650px!important;
+  padding:clamp(44px,6vw,88px)!important;
+  display:flex!important;
+  align-items:center!important;
+  position:relative!important;
+  isolation:isolate!important;
+  overflow:hidden!important;
+}
+main#top>section:first-of-type.gtc-enhanced-hero>.max-w-5xl{
+  max-width:1160px!important;
+  width:min(1160px,100%)!important;
+  position:relative!important;
+  z-index:2!important;
+  margin:0!important;
+  padding:0!important;
+  text-align:left!important;
+}
+main#top>section:first-of-type.gtc-enhanced-hero>.max-w-5xl:after{content:none!important}
+main#top>section:first-of-type.gtc-enhanced-hero h1{
+  max-width:780px!important;
+  font-size:clamp(38px,5vw,62px)!important;
+  line-height:1.06!important;
+  letter-spacing:-.045em!important;
+  color:#fff!important;
+}
+main#top>section:first-of-type.gtc-enhanced-hero p{color:#e5edf5!important}
+@media(max-width:760px){
+  main#top>section:first-of-type.gtc-enhanced-hero{min-height:700px!important;padding:34px 22px 250px!important}
+  main#top>section:first-of-type.gtc-enhanced-hero>.max-w-5xl{width:100%!important}
+  main#top>section:first-of-type.gtc-enhanced-hero h1{font-size:clamp(34px,9vw,46px)!important}
+}
 </style>
 </head>
 <body class="font-sans antialiased selection:bg-emerald-500 selection:text-slate-950 grid-bg min-h-screen flex flex-col">
@@ -819,7 +854,6 @@ footer [class*="text-slate-500"]{color:#c5d2df!important}
 
   </script>
   <script src="/assets/gtc-landing-enhancements.js?v=20261104h" defer></script>
-  <script src="/assets/gtc-analytics.js?v=20261104a" defer></script>
   <script src="/assets/gtc-analytics.js?v=20261104a" defer></script>
 </body>
 </html>
