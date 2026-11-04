@@ -224,3 +224,23 @@ main#top>section:first-of-type.gtc-enhanced-hero.cloud-hero-banner>.gtc-hero-pro
     width:150px!important;right:22px!important;top:auto!important;bottom:18px!important;transform:none!important;
   }
 }
+
+
+/* Cloud & DevOps mobile/desktop override: restore the shared photo layer.
+   The legacy page-level selector hid it with higher specificity. */
+main#top>section:first-of-type.gtc-enhanced-hero.cloud-hero-banner>.gtc-hero-photo{
+  display:block!important;visibility:visible!important;opacity:1!important;
+  position:absolute!important;inset:0!important;z-index:0!important;
+  width:100%!important;height:100%!important;object-fit:cover!important;
+  object-position:center 45%!important;pointer-events:none!important;
+}
+main#top>section:first-of-type.gtc-enhanced-hero.cloud-hero-banner:before{
+  content:""!important;display:block!important;position:absolute!important;
+  inset:0!important;z-index:1!important;pointer-events:none!important;
+  background:linear-gradient(90deg,rgba(4,17,32,.96) 0%,rgba(5,24,43,.86) 48%,rgba(5,24,43,.40) 100%)!important;
+}
+@media(max-width:760px){
+  main#top>section:first-of-type.gtc-enhanced-hero.cloud-hero-banner>.gtc-hero-photo{
+    object-position:62% center!important;
+  }
+}
