@@ -13,8 +13,7 @@ const pages={
 };
 const data=pages[path]||pages['/cloud-devops'];
 const root=document.body;
-const header=document.createElement('header');header.className='gtc-nav';header.innerHTML='<div class="gtc-nav-inner"><a class="gtc-brand" href="/"><span class="gtc-mark">GTC</span>Global Tech Career</a><nav class="gtc-nav-links"><a href="/">All Playbooks</a><a href="#gtc-market-reality">Market Reality</a><a href="#gtc-deep-dive">What You Will Build</a><a href="#curriculum">Curriculum</a><a href="#faq">FAQ</a><a class="gtc-nav-cta" href="#curriculum">Explore Preview →</a></nav></div>';
-root.insertBefore(header,root.firstChild);
+// Navigation is authored in each page's HTML so it remains available even if enhancements are delayed or blocked.
 const firstSection=root.querySelector('main .hero, main header.hero, main section.hero, main section#top, main section, body>section');
 if(firstSection){
  firstSection.id=firstSection.id||'gtc-hero';
