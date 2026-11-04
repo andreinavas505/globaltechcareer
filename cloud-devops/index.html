@@ -154,7 +154,7 @@ header>div.max-w-6xl{max-width:1440px!important;gap:clamp(16px,2vw,28px)}
 header>div.max-w-6xl>a:first-child{flex:0 0 auto;min-width:max-content;margin-right:clamp(8px,1.5vw,24px)}
 header>div.max-w-6xl>nav{flex:1 1 auto;justify-content:center;gap:clamp(12px,1.35vw,20px);white-space:nowrap}
 header>div.max-w-6xl>div:last-child{flex:0 0 auto;margin-left:auto;gap:clamp(8px,1vw,14px)}
-@media(max-width:1200px){header>div.max-w-6xl>nav{display:none!important}}
+
 [class~="bg-emerald-950/80"]{background:#e8f7f4!important;color:#0b5f5b!important;border-color:#b9e9e3!important}
 [class~="text-emerald-200"]{color:#0b5f5b!important}
 main#top>section{color:var(--ink)}
@@ -202,7 +202,7 @@ footer [class*="text-slate-500"]{color:#c5d2df!important}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
-  <link rel="stylesheet" href="/assets/gtc-design-system.css?v=20261104g">
+  <link rel="stylesheet" href="/assets/gtc-design-system.css?v=20261104h">
   <style>/* Page navigation stays visible without JavaScript. */
 .gtc-enhanced-hero{background:linear-gradient(115deg,rgba(4,19,36,.97),rgba(9,48,75,.92))!important;color:#fff!important;position:relative;isolation:isolate;overflow:hidden}
 .gtc-enhanced-hero:after{content:"";position:absolute;z-index:-1;right:-7%;top:-45%;width:55%;height:190%;border:1px solid rgba(125,232,213,.2);border-radius:50%;box-shadow:0 0 0 28px rgba(125,232,213,.035),0 0 0 58px rgba(125,232,213,.025),0 0 90px rgba(22,199,178,.12)}
@@ -222,30 +222,11 @@ footer [class*="text-slate-500"]{color:#c5d2df!important}
   </div>
 
   <!-- Navigation -->
-  <header class="sticky top-0 z-40 backdrop-blur-md bg-slate-950/85 border-b border-slate-800/80">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-      <a href="#top" class="flex items-center gap-2.5 group">
-        <div class="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/40 flex items-center justify-center font-mono font-bold text-emerald-400 group-hover:bg-emerald-500 group-hover:text-slate-950 transition">
-          GTC
-        </div>
-        <span class="font-bold tracking-tight text-white text-base sm:text-lg">GlobalTechCareer</span>
-      </a>
-
-      <nav class="flex items-center gap-4 text-xs sm:text-sm text-slate-300 font-medium">
-        <a href="#problem" class="hover:text-emerald-400 transition" data-i18n="nav_problem">The Challenge</a>
-        <a href="#interactive-demo" class="hover:text-emerald-400 transition" data-i18n="nav_demo">Impact Examples</a>
-        <a href="#curriculum" class="hover:text-emerald-400 transition" data-i18n="nav_curriculum">4-Module Curriculum</a>
-        <a href="#pricing" class="hover:text-emerald-400 transition" data-i18n="nav_pricing">Pricing & Guarantee</a>
-        <a href="#faq" class="hover:text-emerald-400 transition">FAQ</a>
-      </nav>
-
-      <div class="flex items-center gap-3">
-        <a href="https://pay.hotmart.com/I108206494I?checkoutMode=10" target="_blank" rel="noopener noreferrer" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold text-xs sm:text-sm px-4 py-2 rounded-lg transition inline-flex items-center justify-center">
-          <span data-i18n="nav_cta">Get Playbook — $47</span>
-        </a>
-      </div>
-    </div>
-  </header>
+  <header class="gtc-nav"><div class="gtc-nav-inner">
+<a class="gtc-brand" href="/"><span class="gtc-mark">GTC</span>Global Tech Career</a>
+<nav class="gtc-nav-links" aria-label="Main navigation">
+<a href="#problem">The Challenge</a><a href="#interactive-demo">Impact Examples</a><a href="#curriculum">Curriculum</a><a href="#pricing">Get Access</a><a href="#faq">FAQ</a><a class="gtc-nav-cta" href="#curriculum">Explore Preview →</a>
+</nav></div></header>
 
   <main id="top" class="flex-grow">
     <!-- HERO SECTION -->
@@ -827,7 +808,7 @@ footer [class*="text-slate-500"]{color:#c5d2df!important}
     });
 
   </script>
-  <script src="/assets/gtc-landing-enhancements.js?v=20261104g" defer></script>
+  <script src="/assets/gtc-landing-enhancements.js?v=20261104h" defer></script>
 </body>
 </html>
 
