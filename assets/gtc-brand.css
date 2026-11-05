@@ -338,3 +338,13 @@
   .gtc-specialty-card .gtc-specialty-art{height:auto!important;min-height:0!important}
   .gtc-specialty-card .gtc-specialty-art .gtc-specialty-photo{height:auto!important}
 }
+
+
+/* Cloud & DevOps cover: trim the white side gutters to match the other cards */
+.gtc-specialty-card .gtc-specialty-art.art-01 .gtc-specialty-photo{
+  transform:scale(1.16)!important;
+  transform-origin:center center!important;
+}
+.gtc-specialty-card:hover .gtc-specialty-art.art-01 .gtc-specialty-photo{
+  transform:scale(1.16)!important;
+}
