@@ -361,3 +361,19 @@
 .gtc-specialty-card:hover .gtc-specialty-art.art-01 .gtc-specialty-photo{
   transform:none!important;
 }
+
+
+/* DevOps cover correction: keep the artwork bright and crop only its white frame */
+.gtc-specialty-card .gtc-specialty-art.art-01{
+  background:#082b45!important;
+  overflow:hidden!important;
+}
+.gtc-specialty-card .gtc-specialty-art.art-01 .gtc-specialty-photo{
+  mix-blend-mode:normal!important;
+  transform:scale(1.16)!important;
+  transform-origin:center center!important;
+}
+.gtc-specialty-card:hover .gtc-specialty-art.art-01 .gtc-specialty-photo{
+  mix-blend-mode:normal!important;
+  transform:scale(1.16)!important;
+}
