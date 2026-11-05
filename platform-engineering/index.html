@@ -58,7 +58,66 @@ footer{background:#061321;color:#b7c7d4;padding:35px 24px;font-size:11px}.footer
 </style>
   <link rel="stylesheet" href="/assets/gtc-design-system.css?v=20261104j">
 
-<style id="gtc-playbook-cover-style">.gtc-cover-visual{position:relative;z-index:2;display:flex;align-items:center;justify-content:center;min-height:0;width:100%;padding:18px}.gtc-cover-visual img{display:block;width:min(100%,440px);height:auto;max-height:560px;object-fit:contain;border-radius:12px;filter:drop-shadow(0 24px 38px rgba(0,0,0,.42))}@media(max-width:650px){.gtc-cover-visual{padding:8px 12px 20px}.gtc-cover-visual img{width:min(82%,360px);max-height:460px}}</style></head><body>
+<style id="gtc-playbook-cover-style">.gtc-cover-visual{position:relative;z-index:2;display:flex;align-items:center;justify-content:center;min-height:0;width:100%;padding:18px}.gtc-cover-visual img{display:block;width:min(100%,440px);height:auto;max-height:560px;object-fit:contain;border-radius:12px;filter:drop-shadow(0 24px 38px rgba(0,0,0,.42))}@media(max-width:650px){.gtc-cover-visual{padding:8px 12px 20px}.gtc-cover-visual img{width:min(82%,360px);max-height:460px}}</style><style id="gtc-cloud-reference-hero">
+/* Reference layout: match the Cloud & DevOps hero across every playbook. */
+.hero{
+  position:relative!important;isolation:isolate!important;overflow:hidden!important;
+  min-height:594px!important;display:flex!important;align-items:center!important;
+  color:#fff!important;
+  background:
+    radial-gradient(ellipse at 82% 58%,rgba(0,190,190,.25) 0%,rgba(0,105,145,.13) 27%,transparent 54%),
+    radial-gradient(ellipse at 12% 18%,rgba(15,93,150,.30) 0%,transparent 48%),
+    linear-gradient(118deg,#06172b 0%,#082943 54%,#071b32 100%)!important;
+}
+.hero:before{
+  content:""!important;position:absolute!important;inset:0!important;z-index:0!important;pointer-events:none!important;
+  opacity:.75!important;
+  background-image:linear-gradient(rgba(125,232,213,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(125,232,213,.055) 1px,transparent 1px)!important;
+  background-size:44px 44px!important;
+}
+.hero:after{content:""!important;position:absolute!important;z-index:0!important;right:-8%!important;top:-42%!important;width:58%!important;height:185%!important;border:1px solid rgba(125,232,213,.15)!important;border-radius:50%!important;box-shadow:0 0 0 28px rgba(125,232,213,.025),0 0 0 58px rgba(125,232,213,.018)!important;pointer-events:none!important}
+.hero-inner{
+  position:relative!important;z-index:1!important;max-width:1240px!important;width:min(1240px,calc(100% - 56px))!important;
+  margin:0 auto!important;padding:38px 0 42px!important;
+  display:grid!important;grid-template-columns:minmax(0,1fr) 310px!important;
+  gap:clamp(38px,5vw,76px)!important;align-items:center!important;
+}
+.hero-inner>div:first-child{min-width:0!important;text-align:left!important}
+.hero-inner h1{max-width:760px!important;font-size:clamp(40px,4.15vw,58px)!important;line-height:1.08!important;letter-spacing:-.04em!important;color:#fff!important}
+.hero-inner p{max-width:720px!important;font-size:18px!important;line-height:1.5!important;color:#e5edf5!important;margin:16px 0 24px!important}
+.hero-inner .eyebrow{color:#7de8d5!important}
+.hero-inner .hero-actions{justify-content:flex-start!important;align-items:center!important;gap:14px!important;margin:0 0 22px!important;flex-wrap:wrap!important}
+.hero-inner .microtrust{justify-content:flex-start!important;color:#c5d7e5!important}
+.hero-inner .visual.gtc-cover-visual{min-width:0!important;min-height:0!important;width:100%!important;padding:0!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:11px!important;margin:0!important}
+.hero-inner .gtc-cover-visual>img{display:block!important;width:min(100%,270px)!important;max-height:300px!important;height:auto!important;object-fit:contain!important;border-radius:8px!important;filter:drop-shadow(0 18px 28px rgba(0,0,0,.4))!important}
+.gtc-launch-offer{width:100%!important;max-width:292px!important;box-sizing:border-box!important;padding:13px 15px!important;border:1px solid rgba(45,212,191,.48)!important;border-radius:16px!important;background:linear-gradient(145deg,rgba(7,30,49,.97),rgba(3,16,30,.97))!important;box-shadow:0 18px 38px rgba(0,0,0,.3)!important;text-align:center!important;color:#fff!important}
+.gtc-launch-kicker{font-size:10px!important;letter-spacing:.16em!important;font-weight:800!important;color:#5eead4!important;text-transform:uppercase!important}
+.gtc-launch-price{display:flex!important;align-items:baseline!important;justify-content:center!important;gap:8px!important;margin:6px 0 2px!important}
+.gtc-launch-price strong{font-size:34px!important;line-height:1!important;font-weight:900!important;letter-spacing:-.04em!important;color:#fff!important}
+.gtc-launch-price span{font-size:12px!important;color:#cbd5e1!important;font-weight:700!important}
+.gtc-launch-note{font-size:12px!important;line-height:1.4!important;color:#cbd5e1!important;margin:0 0 10px!important}
+.gtc-launch-button{display:flex!important;align-items:center!important;justify-content:center!important;gap:9px!important;width:100%!important;box-sizing:border-box!important;padding:12px 14px!important;border-radius:10px!important;background:#2dd4bf!important;color:#042033!important;text-decoration:none!important;font-size:12px!important;font-weight:900!important;letter-spacing:.02em!important}
+.gtc-launch-trust{font-size:9px!important;color:#94a3b8!important;margin-top:8px!important}
+@media(max-width:900px){
+ .hero{min-height:0!important}
+ .hero-inner{width:calc(100% - 40px)!important;grid-template-columns:minmax(0,1fr) 280px!important;gap:26px!important;padding:38px 0!important}
+ .hero-inner h1{font-size:clamp(36px,5vw,48px)!important}
+ .hero-inner p{font-size:16px!important}
+ .hero-inner .gtc-cover-visual>img{width:min(100%,245px)!important;max-height:270px!important}
+}
+@media(max-width:680px){
+ .hero{min-height:0!important}
+ .hero-inner{width:calc(100% - 36px)!important;grid-template-columns:1fr!important;gap:24px!important;padding:38px 0 34px!important}
+ .hero-inner h1{font-size:clamp(34px,9vw,44px)!important}
+ .hero-inner p{font-size:15px!important}
+ .hero-inner .visual.gtc-cover-visual{width:min(100%,390px)!important;margin:0 auto!important}
+ .hero-inner .gtc-cover-visual>img{width:min(78%,270px)!important;max-height:300px!important}
+ .gtc-launch-offer{max-width:390px!important}
+ .hero-inner .hero-actions{align-items:stretch!important}
+ .hero-inner .hero-actions .btn{width:100%!important;justify-content:center!important}
+}
+</style>
+</head><body>
 <div class="announcement">PLATFORM ENGINEERING CAREER EDITION &nbsp;•&nbsp; PRACTICAL FRAMEWORKS FOR YOUR NEXT MOVE</div>
 <header><div class="nav"><a class="brand" href="/"><span class="brandmark">GTC</span><span>Global Tech Career</span></a><nav aria-label="Main navigation"><a href="#challenge">The Challenge</a><a href="#method">The Method</a><a href="#curriculum">Curriculum</a><a href="#pricing">Get Access</a><a href="#faq">FAQ</a></nav><a class="btn" href="#pricing">Explore the Playbook — $47</a></div></header>
 <main><section class="hero" id="top" style="--hero-image:url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=2000&q=90')"><div class="hero-inner">
@@ -66,7 +125,7 @@ footer{background:#061321;color:#b7c7d4;padding:35px 24px;font-size:11px}.footer
 <p>Designed for platform engineers, internal developer platform engineers, devex architects and cloud foundation leads pursuing opportunities in the United States and global remote markets. Illustrative market reference: $150,000–$220,000+ USD; actual compensation varies by employer, level, location, scope and employment model.</p>
 <div class="hero-actions"><a class="btn" href="#pricing">Explore the Playbook — $47 USD <span>→</span></a><a class="btn outline" href="#curriculum">View the Curriculum</a></div>
 <div class="microtrust"><span>✓ 4 MODULES · 8 LESSONS</span><span>✓ ONLINE COURSE</span><span>✓ TEMPLATES &amp; AI PROMPTS</span></div></div>
-<div class="visual gtc-cover-visual" aria-label="Platform Engineering Playbook cover"><img src="/assets/platform.jpeg" alt="Platform Engineering Playbook cover" loading="eager"></div>
+<div class="visual gtc-cover-visual" aria-label="Platform Engineering Playbook cover"><img src="/assets/platform.jpeg" alt="Platform Engineering Playbook cover" loading="eager"><div class="gtc-launch-offer"><div class="gtc-launch-kicker">LAUNCH PRICE</div><div class="gtc-launch-price"><strong>$47</strong><span>USD</span></div><p class="gtc-launch-note">Get instant access to the complete playbook.</p><a class="gtc-launch-button" href="#pricing" >GET INSTANT ACCESS <span aria-hidden="true">→</span></a><div class="gtc-launch-trust">Secure checkout powered by Hotmart</div></div></div>
 </div></section>
 <section id="challenge"><div class="container center"><div class="section-tag">THE REAL CHALLENGE</div><h2 class="section-title">Platform Engineering hiring is about the experience you enable—not just the infrastructure you operate.</h2><p class="lead">Hiring teams want to understand how your platform reduces cognitive load, standardizes safe delivery, improves developer flow and creates measurable value for engineering teams.</p></div><div class="container"><div class="pain-grid"><article class="panel"><div class="icon">◎</div><h3>Infrastructure is mistaken for a platform</h3><p>Explain the internal customer journey, self-service capabilities, golden paths, service catalog and platform product model.</p></article><article class="panel"><div class="icon">↗</div><h3>Developer impact is hard to quantify</h3><p>Connect platform capabilities to onboarding time, lead time, deployment friction, adoption, reliability and operational toil.</p></article><article class="panel"><div class="icon">◇</div><h3>Architecture answers lack product thinking</h3><p>Prepare to discuss platform APIs, multi-tenancy, governance, paved roads, extensibility and adoption trade-offs.</p></article></div></div></section>
 <section class="dark-section" id="method"><div class="container two-col"><div><div class="section-tag">THE EVIDENCE-LED METHOD</div><h2 class="section-title">Position yourself as an engineer of the developer experience.</h2><p class="lead">Build a coherent story that connects platform capabilities to developer workflows, operational guardrails and outcomes for the teams consuming the platform.</p><ul class="checklist"><li><span class="check">✓</span><span>Target roles by platform ownership, developer audience, cloud scope and operating model.</span></li><li><span class="check">✓</span><span>Map platform capabilities: provisioning, service catalog, CI/CD, secrets, observability and policy guardrails.</span></li><li><span class="check">✓</span><span>Document adoption, self-service usage, onboarding friction and developer workflow improvements.</span></li><li><span class="check">✓</span><span>Prepare architecture stories for Kubernetes, platform APIs, golden paths, multi-tenancy and governance.</span></li><li><span class="check">✓</span><span>Show how you balance paved roads with flexibility, reliability, security and cost.</span></li></ul></div><div class="signal-board"><div class="signal-head"><span>CAREER EVIDENCE BOARD</span><span>FIELD NOTES / GTC</span></div><div class="signal"><small>DEVELOPER EXPERIENCE</small><strong>Time to first deploy, onboarding friction, workflow consistency and developer feedback.</strong></div><div class="signal"><small>PLATFORM ADOPTION</small><strong>Active teams, golden-path usage, self-service completion and service catalog coverage.</strong></div><div class="signal"><small>DELIVERY FLOW</small><strong>Build duration, PR lead time, deployment frequency and release bottlenecks.</strong></div><div class="signal"><small>PLATFORM OPERATIONS</small><strong>Availability, incident load, policy compliance, cost visibility and toil reduction.</strong></div></div></div></section>
