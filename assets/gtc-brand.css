@@ -304,3 +304,37 @@
 /* Use the exact favicon brand asset in the hero discovery panel */
 .gtc-path-brand-mark{display:block!important;width:27px!important;height:27px!important;min-width:27px!important;object-fit:contain!important;flex:0 0 27px!important;filter:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;background:none!important}
 .gtc-path-panel-head .gtc-path-brand-mark{margin:0!important}
+
+
+/* Preserve the complete specialty playbook cover artwork — no cropping */
+.gtc-specialty-card .gtc-specialty-art{
+  display:block!important;
+  width:100%!important;
+  height:auto!important;
+  min-height:0!important;
+  aspect-ratio:auto!important;
+  overflow:hidden!important;
+  background:#082b45!important;
+}
+.gtc-specialty-card .gtc-specialty-art .gtc-specialty-photo{
+  position:relative!important;
+  inset:auto!important;
+  display:block!important;
+  width:100%!important;
+  height:auto!important;
+  max-height:none!important;
+  object-fit:contain!important;
+  object-position:center center!important;
+  transform:none!important;
+  filter:saturate(1.04) contrast(1.02)!important;
+}
+.gtc-specialty-card:hover .gtc-specialty-art .gtc-specialty-photo{
+  transform:none!important;
+}
+.gtc-specialty-card .gtc-specialty-art:after{
+  background:linear-gradient(180deg,rgba(3,18,34,.02),rgba(3,18,34,.06))!important;
+}
+@media(max-width:600px){
+  .gtc-specialty-card .gtc-specialty-art{height:auto!important;min-height:0!important}
+  .gtc-specialty-card .gtc-specialty-art .gtc-specialty-photo{height:auto!important}
+}
