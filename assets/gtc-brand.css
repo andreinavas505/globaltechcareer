@@ -282,3 +282,20 @@
  .gtc-final-actions{flex-direction:column;align-items:stretch}
  .gtc-final-actions a{width:100%;box-sizing:border-box}
 }
+
+/* Unified brand mark and real specialty photography */
+.gtc-logo i,.gtc-mark,.brandmark,.gtc-brand-symbol{
+  background-image:url('/assets/gtc-mark.svg')!important;
+  background-position:center!important;background-repeat:no-repeat!important;
+  background-size:contain!important;background-color:transparent!important;
+  border:0!important;border-radius:0!important;transform:none!important;
+}
+.gtc-logo i{width:48px!important;height:46px!important;min-width:48px!important}
+.gtc-mark,.brandmark,.gtc-brand-symbol{width:40px!important;height:40px!important;min-width:40px!important}
+.gtc-specialty-art{position:relative!important;overflow:hidden!important;isolation:isolate!important;background:#082b45!important}
+.gtc-specialty-art .gtc-specialty-photo{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center 42%!important;display:block!important;z-index:-2!important;transition:transform .55s ease,filter .35s ease!important;filter:saturate(1.08) contrast(1.04)!important}
+.gtc-specialty-art:after{content:""!important;position:absolute!important;inset:0!important;z-index:-1!important;background:linear-gradient(180deg,rgba(3,18,34,.08),rgba(3,18,34,.18) 45%,rgba(3,18,34,.74))!important;pointer-events:none!important}
+.gtc-specialty-card:hover .gtc-specialty-photo{transform:scale(1.06)!important}
+.gtc-specialty-number{position:relative!important;z-index:2!important;text-shadow:0 2px 8px #00101f!important}
+.gtc-specialty-art-grid{z-index:0!important;opacity:.12!important}
+@media(prefers-reduced-motion:reduce){.gtc-specialty-art .gtc-specialty-photo{transition:none!important}.gtc-specialty-card:hover .gtc-specialty-photo{transform:none!important}}
