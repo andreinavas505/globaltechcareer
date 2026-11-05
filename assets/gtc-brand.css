@@ -242,3 +242,43 @@
 .gtc-home-hero .gtc-hero-art img{display:none!important}
 .gtc-home-hero .gtc-path-panel{display:block!important;visibility:visible!important;opacity:1!important}
 @media(max-width:850px){.gtc-home-hero .gtc-hero-art{display:flex!important}.gtc-home-hero-inner{grid-template-columns:1fr!important}}
+
+
+/* Conversion-focused specialty navigation and playbook cards */
+.gtc-path-panel{width:min(100%,520px)!important;padding:24px!important}
+.gtc-path-panel-title{margin:20px 0 18px!important}
+.gtc-path-nodes{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:8px!important}
+.gtc-path-nodes a{display:flex;align-items:center;justify-content:center;min-height:42px;padding:9px 7px;text-align:center;border:1px solid #2b6578;border-radius:9px;background:#ffffff08;color:#e5f7fb;text-decoration:none;font-size:10px;font-weight:750;line-height:1.25;transition:background .18s,border-color .18s,transform .18s}
+.gtc-path-nodes a:hover,.gtc-path-nodes a:focus-visible{background:#0b6d70;border-color:#48e1d0;color:#fff;transform:translateY(-2px);outline:none}
+.gtc-specialty-card{cursor:pointer}
+.gtc-specialty-content{min-height:245px}
+.gtc-specialty-link{margin-bottom:12px}
+.gtc-specialty-actions{display:grid;grid-template-columns:1fr;gap:8px;width:100%;margin-top:auto}
+.gtc-specialty-actions a{display:flex;align-items:center;justify-content:center;min-height:39px;padding:10px 12px;border-radius:8px;text-align:center;text-decoration:none;font-size:11px;font-weight:850;transition:transform .18s,background .18s}
+.gtc-specialty-actions .gtc-view-path{border:1px solid #3b8290;color:#c9f7f0;background:#ffffff08}
+.gtc-specialty-actions .gtc-buy-path{background:#08d9d1;color:#03243a}
+.gtc-specialty-actions a:hover{transform:translateY(-2px)}
+.gtc-explore-bottom{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:24px;padding:17px 20px;border:1px solid #236278;border-radius:12px;background:#08263d;color:#c1d5e2;font-size:12px}
+.gtc-explore-bottom a{color:#54e5d4;text-decoration:none;font-weight:850;white-space:nowrap}
+.gtc-explore-bottom a:hover{text-decoration:underline}
+.gtc-final-actions{display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap;margin:24px auto 12px}
+.gtc-home-final .gtc-final-actions .gtc-button{min-height:50px;padding:15px 23px}
+.gtc-final-secondary{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:14px 22px;border:1px solid #7bd8d1;border-radius:11px;color:#e8fffb;text-decoration:none;font-size:13px;font-weight:800}
+.gtc-final-trust{color:#b8d3df;font-size:11px;margin-top:12px}
+@media(max-width:850px){
+ .gtc-path-panel{width:min(100%,520px)!important}
+ .gtc-specialty-content{min-height:0}
+}
+@media(max-width:600px){
+ .gtc-path-panel{padding:17px!important}
+ .gtc-path-panel-title{font-size:29px!important;margin:17px 0!important}
+ .gtc-path-nodes{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:7px!important}
+ .gtc-path-nodes a{min-height:40px;font-size:10px}
+ .gtc-specialty-content{padding:15px!important}
+ .gtc-specialty-content h3{font-size:17px!important}
+ .gtc-specialty-actions a{min-height:42px}
+ .gtc-explore-bottom{align-items:flex-start;flex-direction:column}
+ .gtc-explore-bottom a{white-space:normal}
+ .gtc-final-actions{flex-direction:column;align-items:stretch}
+ .gtc-final-actions a{width:100%;box-sizing:border-box}
+}
