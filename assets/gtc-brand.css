@@ -1,0 +1,13 @@
+/* Global Tech Career identity system — three rising signal bars */
+.gtc-brand-symbol,.brandmark,.gtc-mark,.gtc-logo i{background-image:url('/assets/gtc-mark.svg')!important;background-position:center!important;background-repeat:no-repeat!important;background-size:contain!important;border:0!important;border-radius:0!important;background-color:transparent!important;color:transparent!important;font-size:0!important;line-height:0!important;display:inline-block!important;width:38px!important;height:38px!important;min-width:38px!important;padding:0!important;box-shadow:none!important;vertical-align:middle!important}
+.gtc-logo i{width:44px!important;height:42px!important}
+.brandmark,.gtc-mark{width:40px!important;height:40px!important}
+.gtc-home-hero{background:radial-gradient(ellipse at 78% 48%,rgba(0,190,190,.18),transparent 45%),linear-gradient(105deg,#04172b 0%,#082943 58%,#071b32 100%)!important;position:relative;isolation:isolate;overflow:hidden}
+.gtc-home-hero:after{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.4;background-image:linear-gradient(rgba(125,232,213,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(125,232,213,.055) 1px,transparent 1px);background-size:42px 42px}
+.gtc-home-hero-inner{max-width:1280px!important;grid-template-columns:1fr 1fr!important;min-height:570px!important;gap:42px!important;padding-top:58px!important;padding-bottom:58px!important}
+.gtc-hero-art{min-height:400px!important;position:relative!important}
+.gtc-hero-art:before{content:'';position:absolute;width:78%;height:78%;border-radius:50%;background:#08c8bd24;filter:blur(55px)}
+.gtc-hero-art img{position:relative;width:100%!important;max-width:620px!important;max-height:470px!important;object-fit:cover!important;border:1px solid #45d5d366;border-radius:22px!important;box-shadow:0 28px 70px #0008,0 0 45px #1ac5ba20!important}
+.gtc-home-hero h1 em{color:#42e1d0!important}
+@media(max-width:850px){.gtc-home-hero-inner{grid-template-columns:1fr!important}.gtc-hero-art{min-height:280px!important}.gtc-hero-art img{max-height:330px!important}}
+@media(max-width:560px){.gtc-hero-art{min-height:220px!important}.gtc-hero-art img{max-height:250px!important}}
