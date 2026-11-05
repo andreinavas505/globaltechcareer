@@ -113,7 +113,7 @@
  .gtc-market-points{grid-template-columns:1fr!important}
  .gtc-assets{grid-template-columns:1fr 1fr!important}
 }
-@media(max-width:760px){
+@media(max-width:900px){
  /* Role-page hero: text first, image centered beneath it on tablets and phones. */
  .hero-inner{width:100%!important;max-width:100%!important;grid-template-columns:minmax(0,1fr)!important;gap:22px!important;align-items:stretch!important}
  .hero-inner>div:first-child{min-width:0!important;width:100%!important}
