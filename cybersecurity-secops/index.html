@@ -180,7 +180,66 @@ body .card p,body section:not(.hero):not(.gtc-market):not(.gtc-bottom-cta) p,bod
 .gtc-cloud-cover-offer .gtc-hero-product{position:relative!important;top:auto!important;right:auto!important;bottom:auto!important;transform:none!important;width:100%!important;max-height:390px!important;object-fit:contain!important}
 .gtc-cloud-cover-offer .gtc-launch-offer{width:100%}
 @media(max-width:850px){.gtc-cloud-cover-offer{position:relative;top:auto;right:auto;transform:none;width:min(86%,390px);margin:28px auto 0}.gtc-cloud-cover-offer .gtc-hero-product{width:78%!important;max-height:350px!important}}
-</style></head>
+</style><style id="gtc-cloud-reference-hero">
+/* Reference layout: match the Cloud & DevOps hero across every playbook. */
+.hero{
+  position:relative!important;isolation:isolate!important;overflow:hidden!important;
+  min-height:594px!important;display:flex!important;align-items:center!important;
+  color:#fff!important;
+  background:
+    radial-gradient(ellipse at 82% 58%,rgba(0,190,190,.25) 0%,rgba(0,105,145,.13) 27%,transparent 54%),
+    radial-gradient(ellipse at 12% 18%,rgba(15,93,150,.30) 0%,transparent 48%),
+    linear-gradient(118deg,#06172b 0%,#082943 54%,#071b32 100%)!important;
+}
+.hero:before{
+  content:""!important;position:absolute!important;inset:0!important;z-index:0!important;pointer-events:none!important;
+  opacity:.75!important;
+  background-image:linear-gradient(rgba(125,232,213,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(125,232,213,.055) 1px,transparent 1px)!important;
+  background-size:44px 44px!important;
+}
+.hero:after{content:""!important;position:absolute!important;z-index:0!important;right:-8%!important;top:-42%!important;width:58%!important;height:185%!important;border:1px solid rgba(125,232,213,.15)!important;border-radius:50%!important;box-shadow:0 0 0 28px rgba(125,232,213,.025),0 0 0 58px rgba(125,232,213,.018)!important;pointer-events:none!important}
+.hero-inner{
+  position:relative!important;z-index:1!important;max-width:1240px!important;width:min(1240px,calc(100% - 56px))!important;
+  margin:0 auto!important;padding:38px 0 42px!important;
+  display:grid!important;grid-template-columns:minmax(0,1fr) 310px!important;
+  gap:clamp(38px,5vw,76px)!important;align-items:center!important;
+}
+.hero-inner>div:first-child{min-width:0!important;text-align:left!important}
+.hero-inner h1{max-width:760px!important;font-size:clamp(40px,4.15vw,58px)!important;line-height:1.08!important;letter-spacing:-.04em!important;color:#fff!important}
+.hero-inner p{max-width:720px!important;font-size:18px!important;line-height:1.5!important;color:#e5edf5!important;margin:16px 0 24px!important}
+.hero-inner .eyebrow{color:#7de8d5!important}
+.hero-inner .hero-actions{justify-content:flex-start!important;align-items:center!important;gap:14px!important;margin:0 0 22px!important;flex-wrap:wrap!important}
+.hero-inner .microtrust{justify-content:flex-start!important;color:#c5d7e5!important}
+.hero-inner .visual.gtc-cover-visual{min-width:0!important;min-height:0!important;width:100%!important;padding:0!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:11px!important;margin:0!important}
+.hero-inner .gtc-cover-visual>img{display:block!important;width:min(100%,270px)!important;max-height:300px!important;height:auto!important;object-fit:contain!important;border-radius:8px!important;filter:drop-shadow(0 18px 28px rgba(0,0,0,.4))!important}
+.gtc-launch-offer{width:100%!important;max-width:292px!important;box-sizing:border-box!important;padding:13px 15px!important;border:1px solid rgba(45,212,191,.48)!important;border-radius:16px!important;background:linear-gradient(145deg,rgba(7,30,49,.97),rgba(3,16,30,.97))!important;box-shadow:0 18px 38px rgba(0,0,0,.3)!important;text-align:center!important;color:#fff!important}
+.gtc-launch-kicker{font-size:10px!important;letter-spacing:.16em!important;font-weight:800!important;color:#5eead4!important;text-transform:uppercase!important}
+.gtc-launch-price{display:flex!important;align-items:baseline!important;justify-content:center!important;gap:8px!important;margin:6px 0 2px!important}
+.gtc-launch-price strong{font-size:34px!important;line-height:1!important;font-weight:900!important;letter-spacing:-.04em!important;color:#fff!important}
+.gtc-launch-price span{font-size:12px!important;color:#cbd5e1!important;font-weight:700!important}
+.gtc-launch-note{font-size:12px!important;line-height:1.4!important;color:#cbd5e1!important;margin:0 0 10px!important}
+.gtc-launch-button{display:flex!important;align-items:center!important;justify-content:center!important;gap:9px!important;width:100%!important;box-sizing:border-box!important;padding:12px 14px!important;border-radius:10px!important;background:#2dd4bf!important;color:#042033!important;text-decoration:none!important;font-size:12px!important;font-weight:900!important;letter-spacing:.02em!important}
+.gtc-launch-trust{font-size:9px!important;color:#94a3b8!important;margin-top:8px!important}
+@media(max-width:900px){
+ .hero{min-height:0!important}
+ .hero-inner{width:calc(100% - 40px)!important;grid-template-columns:minmax(0,1fr) 280px!important;gap:26px!important;padding:38px 0!important}
+ .hero-inner h1{font-size:clamp(36px,5vw,48px)!important}
+ .hero-inner p{font-size:16px!important}
+ .hero-inner .gtc-cover-visual>img{width:min(100%,245px)!important;max-height:270px!important}
+}
+@media(max-width:680px){
+ .hero{min-height:0!important}
+ .hero-inner{width:calc(100% - 36px)!important;grid-template-columns:1fr!important;gap:24px!important;padding:38px 0 34px!important}
+ .hero-inner h1{font-size:clamp(34px,9vw,44px)!important}
+ .hero-inner p{font-size:15px!important}
+ .hero-inner .visual.gtc-cover-visual{width:min(100%,390px)!important;margin:0 auto!important}
+ .hero-inner .gtc-cover-visual>img{width:min(78%,270px)!important;max-height:300px!important}
+ .gtc-launch-offer{max-width:390px!important}
+ .hero-inner .hero-actions{align-items:stretch!important}
+ .hero-inner .hero-actions .btn{width:100%!important;justify-content:center!important}
+}
+</style>
+</head>
 <body>
   <div class="announcement">CYBERSECURITY CAREER EDITION &nbsp;•&nbsp; PRACTICAL FRAMEWORKS FOR YOUR NEXT MOVE</div>
   <header>
