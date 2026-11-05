@@ -299,3 +299,8 @@
 .gtc-specialty-number{position:relative!important;z-index:2!important;text-shadow:0 2px 8px #00101f!important}
 .gtc-specialty-art-grid{z-index:3!important;opacity:.12!important}.gtc-specialty-number{z-index:4!important}
 @media(prefers-reduced-motion:reduce){.gtc-specialty-art .gtc-specialty-photo{transition:none!important}.gtc-specialty-card:hover .gtc-specialty-photo{transform:none!important}}
+
+
+/* Use the exact favicon brand asset in the hero discovery panel */
+.gtc-path-brand-mark{display:block!important;width:27px!important;height:27px!important;min-width:27px!important;object-fit:contain!important;flex:0 0 27px!important;filter:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;background:none!important}
+.gtc-path-panel-head .gtc-path-brand-mark{margin:0!important}
