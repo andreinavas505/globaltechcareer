@@ -366,7 +366,101 @@ main#top>section:first-of-type.cloud-hero-banner>.gtc-hero-product{
 .gtc-cloud-cover-offer .gtc-hero-product{position:relative!important;top:auto!important;right:auto!important;bottom:auto!important;transform:none!important;width:100%!important;max-height:390px!important;object-fit:contain!important}
 .gtc-cloud-cover-offer .gtc-launch-offer{width:100%}
 @media(max-width:850px){.gtc-cloud-cover-offer{position:relative;top:auto;right:auto;transform:none;width:min(86%,390px);margin:28px auto 0}.gtc-cloud-cover-offer .gtc-hero-product{width:78%!important;max-height:350px!important}}
-</style></head>
+</style>
+<style id="gtc-hero-layout-unified-v2">
+/* Shared hero rhythm: consistent text column, product column and compact vertical spacing. */
+@media (min-width: 851px) {
+  .hero .hero-inner {
+    max-width: 1240px !important;
+    grid-template-columns: minmax(0,1.35fr) minmax(300px,.75fr) !important;
+    gap: clamp(34px,5vw,72px) !important;
+    padding: 42px 28px 48px !important;
+    align-items: center !important;
+  }
+  .hero { min-height: 590px !important; }
+  .hero .gtc-cover-visual { padding: 0 !important; gap: 12px !important; }
+  .hero .gtc-cover-visual > img {
+    width: min(100%,370px) !important;
+    max-height: 390px !important;
+    object-fit: contain !important;
+  }
+  .hero .gtc-launch-offer { width: min(100%,370px) !important; padding: 13px 16px !important; }
+  .hero .gtc-launch-price strong { font-size: 34px !important; }
+  .hero .gtc-launch-note { margin-bottom: 9px !important; }
+}
+@media (min-width: 761px) {
+  main#top>section:first-of-type.cloud-hero-banner {
+    min-height: 600px !important;
+    padding: 38px 34px !important;
+  }
+  main#top>section:first-of-type.cloud-hero-banner>.max-w-5xl {
+    width: min(1240px,100%) !important;
+    max-width: 1240px !important;
+    margin: 0 auto !important;
+    padding: 24px 390px 24px 0 !important;
+    text-align: left !important;
+    z-index: 2 !important;
+  }
+  main#top>section:first-of-type.cloud-hero-banner>.max-w-5xl>* { text-align: left !important; }
+  main#top>section:first-of-type.cloud-hero-banner h1 {
+    max-width: 730px !important;
+    font-size: clamp(40px,4.2vw,60px) !important;
+    line-height: 1.08 !important;
+    letter-spacing: -.04em !important;
+  }
+  main#top>section:first-of-type.cloud-hero-banner p.max-w-3xl {
+    max-width: 690px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 24px !important;
+  }
+  main#top>section:first-of-type.cloud-hero-banner .flex.flex-col.sm\:flex-row {
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+  }
+  .gtc-cloud-cover-offer {
+    right: max(34px,calc((100vw - 1240px)/2 + 24px)) !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    width: 310px !important;
+    gap: 11px !important;
+  }
+  .gtc-cloud-cover-offer .gtc-hero-product {
+    width: 270px !important;
+    max-height: 300px !important;
+  }
+  .gtc-cloud-cover-offer .gtc-launch-offer { padding: 13px 15px !important; }
+  .gtc-cloud-cover-offer .gtc-launch-price strong { font-size: 34px !important; }
+}
+@media (max-width: 850px) {
+  .hero .hero-inner { padding: 38px 20px 34px !important; gap: 22px !important; }
+  .hero { min-height: auto !important; }
+  .hero .gtc-cover-visual > img { max-height: 330px !important; }
+}
+@media (max-width: 760px) {
+  main#top>section:first-of-type.cloud-hero-banner {
+    min-height: auto !important;
+    padding: 38px 20px 34px !important;
+  }
+  main#top>section:first-of-type.cloud-hero-banner>.max-w-5xl {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+    text-align: left !important;
+  }
+  main#top>section:first-of-type.cloud-hero-banner>.max-w-5xl>* { text-align: left !important; }
+  .gtc-cloud-cover-offer {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    transform: none !important;
+    width: min(100%,390px) !important;
+    margin: 26px auto 0 !important;
+  }
+  .gtc-cloud-cover-offer .gtc-hero-product { width: min(78%,280px) !important; max-height: 320px !important; }
+}
+</style>
+</head>
 <body class="font-sans antialiased selection:bg-emerald-500 selection:text-slate-950 grid-bg min-h-screen flex flex-col">
 
   <!-- Top Announcement Banner -->
