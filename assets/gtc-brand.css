@@ -377,3 +377,14 @@
   mix-blend-mode:normal!important;
   transform:scale(1.16)!important;
 }
+
+
+/* The replacement DevOps JPEG has no white frame: show it uncropped */
+.gtc-specialty-card .gtc-specialty-art.art-01 .gtc-specialty-photo{
+  mix-blend-mode:normal!important;
+  transform:none!important;
+  object-fit:contain!important;
+}
+.gtc-specialty-card:hover .gtc-specialty-art.art-01 .gtc-specialty-photo{
+  transform:none!important;
+}
