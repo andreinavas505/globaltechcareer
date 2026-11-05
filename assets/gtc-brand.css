@@ -388,3 +388,19 @@
 .gtc-specialty-card:hover .gtc-specialty-art.art-01 .gtc-specialty-photo{
   transform:none!important;
 }
+
+
+/* Make the multicolor Global Tech Career mark clearly visible in the hero career-path panel */
+.gtc-path-panel-head .gtc-path-brand-mark{
+  width:38px!important;
+  height:38px!important;
+  min-width:38px!important;
+  flex:0 0 38px!important;
+  padding:5px!important;
+  border-radius:9px!important;
+  background:rgba(255,255,255,.055)!important;
+  box-shadow:0 0 18px rgba(34,200,219,.14)!important;
+}
+.gtc-path-panel-head{
+  gap:12px!important;
+}
