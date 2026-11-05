@@ -221,44 +221,24 @@
 @media(max-width:560px){.gtc-hero-discovery{min-height:270px!important}.gtc-path-panel{padding:20px}.gtc-path-panel-title{font-size:30px;margin:20px 0 17px}.gtc-path-nodes{gap:6px}.gtc-path-nodes span{font-size:10px;padding:10px 5px}.gtc-floating-note{font-size:8px;padding:8px}.gtc-floating-note.note-a{top:0;right:0}.gtc-floating-note.note-b{bottom:0;left:0}.gtc-specializations-heading h2{font-size:32px!important}.gtc-specializations-heading p{font-size:14px!important}.gtc-role-grid.gtc-specialty-grid{grid-template-columns:1fr!important;gap:13px!important}.gtc-specialty-card{display:grid!important;grid-template-columns:112px 1fr!important;min-height:0!important}.gtc-specialty-art{min-height:100%!important}.gtc-specialty-symbol{width:52px;height:52px;border-radius:15px;font-size:25px}.gtc-specialty-content{padding:14px!important}.gtc-specialty-content h3{font-size:16px!important}.gtc-specialty-content p{font-size:11px!important;margin-bottom:10px!important}.gtc-specialty-tags{margin-bottom:12px}.gtc-specialty-tags span{font-size:8px}.gtc-specialty-link{font-size:11px}.gtc-explore-bottom{flex-direction:column;line-height:1.5}.gtc-career-finder{padding:44px 18px}.gtc-finder-widget{padding:18px}}
 @media(prefers-reduced-motion:reduce){.gtc-orbit{animation:none!important}.gtc-specialty-card,.gtc-specialty-link b{transition:none!important}}
 
-
-/* 2026-11-05 fix: remove legacy hero artwork behind the new CSS career panel */
-.gtc-home-hero{background:#031a30!important;background-image:radial-gradient(ellipse at 78% 48%,rgba(0,190,190,.18),transparent 45%),linear-gradient(105deg,#04172b 0%,#082943 58%,#071b32 100%)!important}
-.gtc-home-hero:before{background-image:linear-gradient(90deg,rgba(2,19,37,.98) 0%,rgba(2,24,44,.94) 58%,rgba(2,19,37,.72) 100%)!important;background-color:transparent!important}
-
-
-/* Definitive hero cleanup: suppress the legacy photographic pseudo-layer. */
+/* Homepage hero — single authoritative CSS composition.
+   The discovery panel is built with HTML/CSS; no background photo is used. */
 .gtc-home-hero{
-  background:#041b31!important;
-  background-image:radial-gradient(ellipse at 78% 48%,rgba(0,190,190,.16),transparent 45%),linear-gradient(105deg,#04172b 0%,#082943 58%,#071b32 100%)!important;
-}
-.gtc-home-hero:before{
-  content:none!important;
-  display:none!important;
-  background:none!important;
-  background-image:none!important;
-}
-.gtc-home-hero:after{
-  z-index:0!important;
-  pointer-events:none!important;
-}
-.gtc-home-hero-inner{
   position:relative!important;
-  z-index:1!important;
+  isolation:isolate!important;
+  overflow:hidden!important;
+  color:#fff!important;
+  background:
+    radial-gradient(ellipse at 78% 48%,rgba(0,190,190,.16),transparent 45%),
+    linear-gradient(105deg,#04172b 0%,#082943 58%,#071b32 100%)!important;
+  background-image:
+    radial-gradient(ellipse at 78% 48%,rgba(0,190,190,.16),transparent 45%),
+    linear-gradient(105deg,#04172b 0%,#082943 58%,#071b32 100%)!important;
 }
-
-
-/* 2026-11-05 hard removal of legacy hero artwork */
-.gtc-home-hero,
-.gtc-home-hero::before,
-.gtc-home-hero:before {
-  background-image: radial-gradient(ellipse at 78% 48%, rgba(0,190,190,.16), transparent 45%), linear-gradient(105deg,#04172b 0%,#082943 58%,#071b32 100%) !important;
-}
-.gtc-home-hero::before,
-.gtc-home-hero:before {
-  content: none !important;
-  display: none !important;
-}
-.gtc-home-hero .gtc-hero-art img {
-  display: none !important;
-}
+.gtc-home-hero::before{content:none!important;display:none!important;background:none!important}
+.gtc-home-hero::after{z-index:0!important;pointer-events:none!important}
+.gtc-home-hero-inner{position:relative!important;z-index:1!important}
+.gtc-home-hero .gtc-hero-art{display:flex!important;position:relative!important;align-items:center!important;justify-content:center!important}
+.gtc-home-hero .gtc-hero-art img{display:none!important}
+.gtc-home-hero .gtc-path-panel{display:block!important;visibility:visible!important;opacity:1!important}
+@media(max-width:850px){.gtc-home-hero .gtc-hero-art{display:flex!important}.gtc-home-hero-inner{grid-template-columns:1fr!important}}
