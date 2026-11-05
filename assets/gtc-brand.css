@@ -25,7 +25,7 @@
 .gtc-navlinks a{font-size:13px!important;white-space:nowrap!important}
 .gtc-navlinks .gtc-nav-cta{padding:13px 19px!important;border-radius:11px!important;background:#08d9d1!important;color:#03233a!important;font-weight:850!important}
 .gtc-home-hero{position:relative!important;isolation:isolate!important;overflow:hidden!important;background:#031a30!important;color:#fff!important}
-.gtc-home-hero:before{content:"";position:absolute;inset:0;z-index:-2;background-image:linear-gradient(90deg,rgba(2,19,37,.98) 0%,rgba(2,24,44,.94) 39%,rgba(2,25,45,.54) 66%,rgba(2,19,37,.10) 100%),url('/assets/Global_Tech_Career_Hero_Corporate_v2.png');background-size:cover;background-position:center right;background-repeat:no-repeat}
+.gtc-home-hero:before{content:"";position:absolute;inset:0;z-index:-2;background-image:linear-gradient(90deg,rgba(2,19,37,.98) 0%,rgba(2,24,44,.94) 39%,rgba(2,25,45,.54) 66%,rgba(2,19,37,.10) 100%);background-size:cover;background-position:center right;background-repeat:no-repeat}
 .gtc-home-hero:after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.28;background-image:linear-gradient(rgba(88,210,225,.11) 1px,transparent 1px),linear-gradient(90deg,rgba(88,210,225,.11) 1px,transparent 1px);background-size:36px 36px}
 .gtc-home-hero-inner{max-width:1420px!important;min-height:570px!important;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr)!important;gap:28px!important;padding:54px 28px 40px!important;align-items:center!important}
 .gtc-home-hero-copy{max-width:720px;min-width:0}
@@ -77,7 +77,7 @@
  .gtc-home-nav>div{min-height:64px!important;padding:8px 18px!important;flex-wrap:wrap!important}
  .gtc-navlinks{width:100%;overflow-x:auto;justify-content:flex-start;padding:4px 0 8px;scrollbar-width:thin}
  .gtc-navlinks a,.gtc-navlinks a:nth-child(n){display:inline-flex!important}
- .gtc-home-hero:before{background-image:linear-gradient(90deg,rgba(2,19,37,.97),rgba(2,24,44,.82)),url('/assets/Global_Tech_Career_Hero_Corporate_v2.png');background-position:62% center}
+ .gtc-home-hero:before{background-image:linear-gradient(90deg,rgba(2,19,37,.97),rgba(2,24,44,.82));background-position:62% center}
  .gtc-home-hero-inner{grid-template-columns:1fr!important;min-height:0!important;padding:54px 24px 40px!important}
  .gtc-hero-art{display:none!important}
  .gtc-home-hero-copy{max-width:760px}
@@ -92,7 +92,7 @@
  .gtc-navlinks{gap:16px!important}
  .gtc-navlinks a{font-size:11px!important}
  .gtc-navlinks .gtc-nav-cta{padding:10px 13px!important}
- .gtc-home-hero:before{background-image:linear-gradient(90deg,rgba(2,19,37,.97),rgba(2,24,44,.88)),url('/assets/Global_Tech_Career_Hero_Corporate_v2.png');background-position:64% center}
+ .gtc-home-hero:before{background-image:linear-gradient(90deg,rgba(2,19,37,.97),rgba(2,24,44,.88));background-position:64% center}
  .gtc-home-hero-inner{padding:42px 18px 30px!important}
  .gtc-home-hero h1{font-size:clamp(37px,10vw,46px)!important}
  .gtc-home-hero p{font-size:15px!important;line-height:1.55!important}
@@ -245,4 +245,20 @@
 .gtc-home-hero-inner{
   position:relative!important;
   z-index:1!important;
+}
+
+
+/* 2026-11-05 hard removal of legacy hero artwork */
+.gtc-home-hero,
+.gtc-home-hero::before,
+.gtc-home-hero:before {
+  background-image: radial-gradient(ellipse at 78% 48%, rgba(0,190,190,.16), transparent 45%), linear-gradient(105deg,#04172b 0%,#082943 58%,#071b32 100%) !important;
+}
+.gtc-home-hero::before,
+.gtc-home-hero:before {
+  content: none !important;
+  display: none !important;
+}
+.gtc-home-hero .gtc-hero-art img {
+  display: none !important;
 }
