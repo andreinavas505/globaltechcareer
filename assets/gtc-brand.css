@@ -11,3 +11,137 @@
 .gtc-home-hero h1 em{color:#42e1d0!important}
 @media(max-width:850px){.gtc-home-hero-inner{grid-template-columns:1fr!important}.gtc-hero-art{min-height:280px!important}.gtc-hero-art img{max-height:330px!important}}
 @media(max-width:560px){.gtc-hero-art{min-height:220px!important}.gtc-hero-art img{max-height:250px!important}}
+
+
+/* === GLOBAL TECH CAREER: premium homepage + consistent mobile system === */
+.gtc-launch-bar{min-height:38px;padding:8px 16px;display:flex;align-items:center;justify-content:center;gap:6px;background:#e9f7f5;color:#12384b;text-align:center;font-size:13px;line-height:1.35}
+.gtc-launch-bar strong{font-weight:850}
+.gtc-launch-dot,.gtc-eyebrow-dot{width:10px;height:10px;flex:0 0 10px;border-radius:50%;background:#14df83;display:inline-block;box-shadow:0 0 12px #14df8370}
+.gtc-home-nav{background:#03172cfa!important;border-bottom:1px solid #1b4560!important}
+.gtc-home-nav>div{max-width:1420px!important;min-height:72px!important;padding:0 28px!important;gap:22px!important}
+.gtc-logo{font-size:21px!important;gap:10px!important;white-space:nowrap}
+.gtc-logo i{background-image:url('/assets/gtc-mark.svg')!important;background-size:contain!important;background-position:center!important;background-repeat:no-repeat!important;width:48px!important;height:46px!important;min-width:48px!important}
+.gtc-navlinks{gap:clamp(12px,1.6vw,26px)!important;align-items:center!important}
+.gtc-navlinks a{font-size:13px!important;white-space:nowrap!important}
+.gtc-navlinks .gtc-nav-cta{padding:13px 19px!important;border-radius:11px!important;background:#08d9d1!important;color:#03233a!important;font-weight:850!important}
+.gtc-home-hero{position:relative!important;isolation:isolate!important;overflow:hidden!important;background:#031a30!important;color:#fff!important}
+.gtc-home-hero:before{content:"";position:absolute;inset:0;z-index:-2;background-image:linear-gradient(90deg,rgba(2,19,37,.98) 0%,rgba(2,24,44,.94) 39%,rgba(2,25,45,.54) 66%,rgba(2,19,37,.10) 100%),url('/assets/Global_Tech_Career_Hero_Corporate_v2.png');background-size:cover;background-position:center right;background-repeat:no-repeat}
+.gtc-home-hero:after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.28;background-image:linear-gradient(rgba(88,210,225,.11) 1px,transparent 1px),linear-gradient(90deg,rgba(88,210,225,.11) 1px,transparent 1px);background-size:36px 36px}
+.gtc-home-hero-inner{max-width:1420px!important;min-height:570px!important;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr)!important;gap:28px!important;padding:54px 28px 40px!important;align-items:center!important}
+.gtc-home-hero-copy{max-width:720px;min-width:0}
+.gtc-home-hero .gtc-eyebrow{display:inline-flex;align-items:center;gap:9px;padding:9px 13px;border:1px solid #00c9c4;border-radius:30px;color:#00e0d7!important;letter-spacing:.08em!important;background:#031b30a8}
+.gtc-home-hero h1{font-size:clamp(42px,4.3vw,64px)!important;line-height:1.02!important;letter-spacing:-.052em!important;max-width:740px!important;margin:18px 0 14px!important;color:#fff!important}
+.gtc-home-hero h1 em{color:#35e0d2!important;font-style:normal!important}
+.gtc-home-hero p{max-width:690px!important;color:#e4eef6!important;font-size:18px!important;line-height:1.5!important}
+.gtc-hero-actions{display:flex!important;flex-wrap:wrap!important;gap:14px!important;margin-top:24px!important}
+.gtc-hero-actions a{min-height:54px!important;padding:14px 22px!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:10px!important;border-radius:12px!important;font-size:15px!important}
+.gtc-hero-actions .gtc-primary{background:#08ddd0!important;color:#03243a!important}
+.gtc-hero-actions .gtc-secondary{background:#041d35d9!important;border:1px solid #16b8c6!important;color:#fff!important}
+.gtc-play-icon{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:#31758c;color:white;font-size:10px}
+.gtc-hero-trust{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:25px;color:#f2f7fb;font-size:13px;font-weight:650}
+.gtc-proof-strip{background:#03233c!important;border-top:1px solid #00bfc5!important;border-bottom:1px solid #00bfc5!important}
+.gtc-proof-inner{max-width:1420px!important;padding:13px 24px!important;grid-template-columns:repeat(3,1fr)!important}
+.gtc-proof{border-right:1px solid #16859b!important;text-align:center!important}
+.gtc-proof b{color:#36e0d2!important}.gtc-proof span{color:#e1edf5!important}
+.gtc-home-section{max-width:1460px!important;padding:48px 24px!important}
+.gtc-section-title{margin-bottom:24px!important}
+.gtc-section-title h2{color:#f5fbff!important}
+.gtc-home-section#playbooks{max-width:none!important;background:linear-gradient(115deg,#041c34,#052c46)!important;padding:24px max(24px,calc((100vw - 1420px)/2)) 54px!important}
+#playbooks .gtc-section-title{display:flex;align-items:center;gap:18px;max-width:none;margin:0 auto 20px!important}
+#playbooks .gtc-section-title:before,#playbooks .gtc-section-title:after{content:"";height:1px;flex:1;background:#00bfc5}
+#playbooks .gtc-section-title .gtc-eyebrow{color:#12e2dc!important;letter-spacing:.22em}
+#playbooks .gtc-section-title h2{display:none}
+#playbooks .gtc-section-title p{display:none}
+.gtc-role-grid{grid-template-columns:repeat(9,minmax(0,1fr))!important;gap:12px!important}
+.gtc-role-card{min-width:0!important;min-height:150px!important;flex-direction:column!important;align-items:stretch!important;justify-content:flex-start!important;background:#052c43!important;border:1px solid #00bfc5!important;border-radius:13px!important;box-shadow:none!important}
+.gtc-role-icon{order:-1!important;width:100%!important;min-height:64px!important;flex:none!important;background:transparent!important;color:#12e3e0!important;font-size:36px!important}
+.gtc-role-copy{padding:0 8px 14px!important;align-items:center!important;text-align:center!important}
+.gtc-role-tag,.gtc-role-copy p,.gtc-card-link{display:none!important}
+.gtc-role-card h3{font-size:14px!important;line-height:1.25!important;color:#fff!important;margin:0!important}
+.gtc-home-section:not(#playbooks) .gtc-section-title h2{color:#0b2942!important}
+.gtc-home-faq .gtc-faq-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.gtc-home-faq article{padding:18px;border:1px solid #d9e4ef;border-radius:13px;background:#fff}
+.gtc-home-faq h3{margin:0 0 8px;color:#0b2942;font-size:16px}
+.gtc-home-faq p{margin:0;color:#52677d;font-size:13px;line-height:1.6}
+.gtc-home-final{background:linear-gradient(110deg,#04172b,#0b3b59 60%,#087e78)!important}
+.gtc-home-final .gtc-eyebrow{color:#55e8d7!important}
+.gtc-home-final h2{color:#fff!important}
+.gtc-home-final .gtc-button{display:inline-flex;background:#08ddd0!important;color:#03243a!important;padding:14px 24px;border-radius:11px;font-weight:850;text-decoration:none}
+@media(max-width:1100px){
+ .gtc-navlinks{gap:10px!important}.gtc-navlinks a{font-size:11px!important}
+ .gtc-navlinks a:nth-child(1),.gtc-navlinks a:nth-child(2),.gtc-navlinks a:nth-child(4),.gtc-navlinks a:nth-child(6){display:none}
+ .gtc-home-hero-inner{grid-template-columns:minmax(0,1fr) minmax(0,.7fr)!important}
+ .gtc-role-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+}
+@media(max-width:850px){
+ .gtc-home-nav>div{min-height:64px!important;padding:8px 18px!important;flex-wrap:wrap!important}
+ .gtc-navlinks{width:100%;overflow-x:auto;justify-content:flex-start;padding:4px 0 8px;scrollbar-width:thin}
+ .gtc-navlinks a,.gtc-navlinks a:nth-child(n){display:inline-flex!important}
+ .gtc-home-hero:before{background-image:linear-gradient(90deg,rgba(2,19,37,.97),rgba(2,24,44,.82)),url('/assets/Global_Tech_Career_Hero_Corporate_v2.png');background-position:62% center}
+ .gtc-home-hero-inner{grid-template-columns:1fr!important;min-height:0!important;padding:54px 24px 40px!important}
+ .gtc-hero-art{display:none!important}
+ .gtc-home-hero-copy{max-width:760px}
+ .gtc-role-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+ .gtc-proof-inner{grid-template-columns:repeat(3,1fr)!important}
+}
+@media(max-width:600px){
+ .gtc-launch-bar{font-size:10px;line-height:1.3;padding:7px 10px;flex-wrap:wrap;gap:3px}
+ .gtc-home-nav>div{padding:8px 14px!important}
+ .gtc-logo{font-size:17px!important}
+ .gtc-logo i{width:38px!important;height:36px!important;min-width:38px!important}
+ .gtc-navlinks{gap:16px!important}
+ .gtc-navlinks a{font-size:11px!important}
+ .gtc-navlinks .gtc-nav-cta{padding:10px 13px!important}
+ .gtc-home-hero:before{background-image:linear-gradient(90deg,rgba(2,19,37,.97),rgba(2,24,44,.88)),url('/assets/Global_Tech_Career_Hero_Corporate_v2.png');background-position:64% center}
+ .gtc-home-hero-inner{padding:42px 18px 30px!important}
+ .gtc-home-hero h1{font-size:clamp(37px,10vw,46px)!important}
+ .gtc-home-hero p{font-size:15px!important;line-height:1.55!important}
+ .gtc-hero-actions{flex-direction:column!important;align-items:stretch!important}
+ .gtc-hero-actions a{width:100%!important;font-size:13px!important}
+ .gtc-hero-trust{display:grid;grid-template-columns:1fr;gap:9px;font-size:11px}
+ .gtc-proof-inner{grid-template-columns:1fr!important;padding:10px 16px!important}
+ .gtc-proof{border:0!important;text-align:left!important;padding:7px 4px!important}
+ .gtc-home-section#playbooks{padding:24px 14px 36px!important}
+ #playbooks .gtc-section-title{gap:9px!important}
+ #playbooks .gtc-section-title .gtc-eyebrow{font-size:10px}
+ .gtc-role-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important}
+ .gtc-role-card{min-height:132px!important}
+ .gtc-role-icon{min-height:55px!important;font-size:31px!important}
+ .gtc-role-card h3{font-size:13px!important}
+ .gtc-home-section{padding:38px 16px!important}
+ .gtc-home-faq .gtc-faq-grid{grid-template-columns:1fr!important}
+ .gtc-market-points{grid-template-columns:1fr!important}
+ .gtc-assets{grid-template-columns:1fr 1fr!important}
+}
+@media(max-width:900px){
+ /* Role-page hero: text first, image centered beneath it on tablets and phones. */
+ .hero-inner{width:100%!important;max-width:100%!important;grid-template-columns:minmax(0,1fr)!important;gap:22px!important;align-items:stretch!important}
+ .hero-inner>div:first-child{min-width:0!important;width:100%!important}
+ .hero-inner>.visual,.hero-inner>.gtc-cover-visual{order:2!important;justify-self:center!important;align-self:center!important;width:min(100%,460px)!important;max-width:460px!important;margin:0 auto!important}
+ .gtc-cover-visual{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;min-width:0!important;overflow:visible!important}
+ .gtc-cover-visual>img{display:block!important;position:relative!important;width:auto!important;max-width:min(100%,360px)!important;height:auto!important;max-height:420px!important;object-fit:contain!important;margin:0 auto!important;left:auto!important;right:auto!important;transform:none!important}
+ .gtc-cover-visual .gtc-launch-offer,.gtc-cover-visual .gtc-launch-price{max-width:100%!important}
+ .hero-inner h1{font-size:clamp(34px,8.5vw,44px)!important;line-height:1.08!important;overflow-wrap:anywhere}
+ .hero-inner p{max-width:100%!important}
+ .gtc-deep-dive{grid-template-columns:minmax(0,1fr)!important;gap:22px!important}
+ .gtc-deep-dive .gtc-deep-copy{order:1!important;min-width:0!important}
+ .gtc-deep-dive .gtc-deep-visual{order:2!important;width:100%!important;min-height:260px!important;margin:0 auto!important}
+ .gtc-deep-visual img{width:100%!important;height:100%!important;object-fit:cover!important}
+ .gtc-deep-dive,.gtc-compare,.gtc-market-inner,.container{max-width:100%!important}
+ .container{padding-left:16px!important;padding-right:16px!important}
+ img,video,iframe{max-width:100%!important}
+ .pain-grid,.gtc-market-grid,.gtc-assets,.benefit-grid,.feature-grid,.curriculum-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media(max-width:560px){
+ .hero-inner{width:100%!important;padding-left:0!important;padding-right:0!important}
+ .hero-inner>.visual,.hero-inner>.gtc-cover-visual{width:100%!important;max-width:100%!important}
+ .gtc-cover-visual>img{max-width:min(88vw,340px)!important;max-height:390px!important}
+ .gtc-launch-offer{width:min(100%,360px)!important;margin:16px auto 0!important}
+ .hero-actions{display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:10px!important}
+ .hero-actions a,.hero-actions .btn{width:100%!important;text-align:center!important;justify-content:center!important}
+ .pain-grid,.gtc-market-grid,.gtc-assets,.benefit-grid,.feature-grid,.curriculum-grid{grid-template-columns:minmax(0,1fr)!important}
+ .gtc-nav .nav,.nav{min-width:0!important;max-width:100%!important}
+ .gtc-sticky-preview{left:12px!important;right:12px!important;max-width:calc(100vw - 24px)!important}
+ .gtc-compare-table{width:100%!important;min-width:0!important}
+ body{overflow-x:hidden!important}
+}
