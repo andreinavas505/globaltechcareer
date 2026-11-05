@@ -225,3 +225,24 @@
 /* 2026-11-05 fix: remove legacy hero artwork behind the new CSS career panel */
 .gtc-home-hero{background:#031a30!important;background-image:radial-gradient(ellipse at 78% 48%,rgba(0,190,190,.18),transparent 45%),linear-gradient(105deg,#04172b 0%,#082943 58%,#071b32 100%)!important}
 .gtc-home-hero:before{background-image:linear-gradient(90deg,rgba(2,19,37,.98) 0%,rgba(2,24,44,.94) 58%,rgba(2,19,37,.72) 100%)!important;background-color:transparent!important}
+
+
+/* Definitive hero cleanup: suppress the legacy photographic pseudo-layer. */
+.gtc-home-hero{
+  background:#041b31!important;
+  background-image:radial-gradient(ellipse at 78% 48%,rgba(0,190,190,.16),transparent 45%),linear-gradient(105deg,#04172b 0%,#082943 58%,#071b32 100%)!important;
+}
+.gtc-home-hero:before{
+  content:none!important;
+  display:none!important;
+  background:none!important;
+  background-image:none!important;
+}
+.gtc-home-hero:after{
+  z-index:0!important;
+  pointer-events:none!important;
+}
+.gtc-home-hero-inner{
+  position:relative!important;
+  z-index:1!important;
+}
