@@ -348,3 +348,16 @@
 .gtc-specialty-card:hover .gtc-specialty-art.art-01 .gtc-specialty-photo{
   transform:scale(1.16)!important;
 }
+
+
+/* DevOps cover: blend its white frame into the same navy-blue card background */
+.gtc-specialty-card .gtc-specialty-art.art-01{
+  background:#082b45!important;
+}
+.gtc-specialty-card .gtc-specialty-art.art-01 .gtc-specialty-photo{
+  mix-blend-mode:darken!important;
+  transform:none!important;
+}
+.gtc-specialty-card:hover .gtc-specialty-art.art-01 .gtc-specialty-photo{
+  transform:none!important;
+}
