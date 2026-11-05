@@ -1,15 +1,12 @@
-/* Global Tech Career — Hotmart checkout click tracking
- * Sends one custom GA4 event per genuine pay.hotmart.com link activation.
- * Does not change checkout URLs, block navigation, or emit purchase events.
- */
+/* Global Tech Career — first-party funnel events for GA4 */
 (function () {
   'use strict';
-
-  if (window.__gtcHotmartTrackingInstalled) return;
-  window.__gtcHotmartTrackingInstalled = true;
-
+  var host = window.location.hostname;
+  if (host !== 'globaltechcareer.com' && host !== 'www.globaltechcareer.com') return;
+  if (window.__gtcFunnelTrackingInstalled) return;
+  window.__gtcFunnelTrackingInstalled = true;
   var path = window.location.pathname.replace(/\/+$/, '') || '/';
-  var playbooks = {
+  var products = {
     '/cloud-devops': 'cloud-devops',
     '/cybersecurity-secops': 'cybersecurity-secops',
     '/ai-mlops': 'ai-mlops',
@@ -20,41 +17,30 @@
     '/platform-engineering': 'platform-engineering',
     '/production-sre': 'production-sre'
   };
-
-  var playbook = playbooks[path] || 'homepage';
-
+  var product = products[path] || 'homepage';
+  function track(name, params) {
+    if (typeof window.gtag !== 'function') return;
+    window.gtag('event', name, Object.assign({
+      product_name: product,
+      page_path: path
+    }, params || {}));
+  }
   document.addEventListener('click', function (event) {
-    var link = event.target && event.target.closest
-      ? event.target.closest('a[href]')
-      : null;
-
+    var link = event.target && event.target.closest ? event.target.closest('a[href]') : null;
     if (!link) return;
-
-    var checkoutUrl;
-    try {
-      checkoutUrl = new URL(link.href, window.location.href);
-    } catch (error) {
-      return;
-    }
-
-    if (checkoutUrl.hostname !== 'pay.hotmart.com') return;
-
-    if (typeof window.gtag !== 'function') {
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({
-        event: 'hotmart_checkout_click',
-        playbook: playbook,
-        link_url: checkoutUrl.href,
-        page_location: window.location.href
+    var url;
+    try { url = new URL(link.href, window.location.href); } catch (error) { return; }
+    if (url.hostname === 'pay.hotmart.com') {
+      track('click_buy_now', {
+        link_url: url.origin + url.pathname,
+        currency: 'USD',
+        value: 47
       });
-      return;
+    } else if ((url.hostname === 'hotmart.com' || url.hostname.endsWith('.hotmart.com')) &&
+               /\/club\//i.test(url.pathname)) {
+      track('click_free_preview', {
+        link_url: url.origin + url.pathname
+      });
     }
-
-    window.gtag('event', 'hotmart_checkout_click', {
-      playbook: playbook,
-      link_url: checkoutUrl.href,
-      page_location: window.location.href,
-      link_domain: checkoutUrl.hostname
-    });
   }, true);
 })();
