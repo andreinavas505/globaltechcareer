@@ -74,6 +74,12 @@ export default {
 };
 
 async function saveCheckoutClick(request, env) {
+    const origin = request.headers.get("Origin") || "";
+    if (origin !== "https://globaltechcareer.com" && origin !== "https://www.globaltechcareer.com") {
+      return response({ error: "Origin not allowed" }, 403);
+    }
+    const length = Number(request.headers.get("Content-Length") || 0);
+    if (length > 8192) return response({ error: "Payload too large" }, 413);
     let body;
     try { body = await request.json(); } catch { return response({ error: "Invalid JSON" }, 400); }
     const clickId = text(body.click_id, 80);
