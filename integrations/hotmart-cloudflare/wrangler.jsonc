@@ -8,6 +8,10 @@
     {
       "pattern": "globaltechcareer.com/api/*",
       "zone_name": "globaltechcareer.com"
+    },
+    {
+      "pattern": "www.globaltechcareer.com/api/*",
+      "zone_name": "globaltechcareer.com"
     }
   ],
   "d1_databases": [
