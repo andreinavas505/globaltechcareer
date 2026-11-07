@@ -70,8 +70,8 @@ export default {
       return handleHotmartWebhook(request, env);
     }
     return response({ error: "Not found" }, 404);
-  },
-
+  }
+};
 
 async function saveCheckoutClick(request, env) {
     let body;
