@@ -64,15 +64,16 @@ export default {
       return response({ ok: true, service: "gtc-hotmart-webhook", version: "1.0.0" });
     }
     if (request.method === "POST" && url.pathname === "/api/checkout-click") {
-      return this.saveCheckoutClick(request, env);
+      return saveCheckoutClick(request, env);
     }
     if (request.method === "POST" && url.pathname === "/api/hotmart/webhook") {
-      return this.handleHotmartWebhook(request, env);
+      return handleHotmartWebhook(request, env);
     }
     return response({ error: "Not found" }, 404);
   },
 
-  async saveCheckoutClick(request, env) {
+
+async function saveCheckoutClick(request, env) {
     let body;
     try { body = await request.json(); } catch { return response({ error: "Invalid JSON" }, 400); }
     const clickId = text(body.click_id, 80);
@@ -98,7 +99,7 @@ export default {
     return response({ ok: true });
   },
 
-  async handleHotmartWebhook(request, env) {
+async function handleHotmartWebhook(request, env) {
     const token = request.headers.get("X-HOTMART-HOTTOK") || "";
     if (!env.HOTMART_HOTTOK || !constantTimeEqual(token, env.HOTMART_HOTTOK)) {
       return response({ error: "Unauthorized" }, 401);
@@ -117,11 +118,14 @@ export default {
     const supported = ["PURCHASE_APPROVED", "PURCHASE_REFUNDED", "PURCHASE_CHARGEBACK", "PURCHASE_PROTEST"];
     if (!supported.includes(eventName)) return response({ ok: true, ignored: eventName });
 
+    if (!transaction) return response({ error: "Missing purchase.transaction" }, 422);
+    if (eventName === "PURCHASE_APPROVED" && !(money(purchase.full_price) || money(purchase.price) || money(purchase.original_offer_price))) {
+      return response({ error: "Purchase amount or currency missing" }, 422);
+    }
     const inserted = await env.DB.prepare(
       "INSERT OR IGNORE INTO webhook_events (event_id, event_name, received_at) VALUES (?, ?, ?)"
     ).bind(eventId, eventName, new Date().toISOString()).run();
     if (!inserted.meta?.changes) return response({ ok: true, duplicate: true });
-    if (!transaction) return response({ error: "Missing purchase.transaction" }, 422);
 
     const productName = text(product.name, 300) || "Hotmart product";
     const clickId = text(purchase.origin?.sck, 80);
@@ -133,7 +137,6 @@ export default {
     const now = new Date().toISOString();
 
     if (eventName === "PURCHASE_APPROVED") {
-      if (!amount) return response({ error: "Purchase amount or currency missing" }, 422);
       const result = await env.DB.prepare(`
         INSERT OR IGNORE INTO sales
         (transaction_id, product_id, product_name, product_slug, status, value, currency, country,
@@ -194,5 +197,4 @@ export default {
     await env.DB.prepare("UPDATE sales SET ga4_refund_status = ?, updated_at = ? WHERE transaction_id = ?")
       .bind(ga.sent ? "sent" : ga.reason || "failed", now, transaction).run();
     return response({ ok: true, sale_status: status, ga4: ga });
-  }
-};
+}
