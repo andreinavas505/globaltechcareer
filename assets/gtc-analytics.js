@@ -6,7 +6,7 @@
   if (window.__gtcFunnelTrackingInstalled) return;
   window.__gtcFunnelTrackingInstalled = true;
 
-  var path = window.location.pathname.replace(/\\/+$/, '') || '/';
+  var path = window.location.pathname.replace(/\/+$/, '') || '/';
   var products = {
     '/cloud-devops': 'cloud-devops',
     '/cybersecurity-secops': 'cybersecurity-secops',
@@ -32,7 +32,7 @@
     var match = document.cookie.match(/(?:^|; )_ga=([^;]+)/);
     if (!match) return '';
     var value = decodeURIComponent(match[1]);
-    var parts = value.match(/^GA\\d+\\.\\d+\\.(\\d+\\.\\d+)$/);
+    var parts = value.match(/^GA\d+\.\d+\.(\d+\.\d+)$/);
     return parts ? parts[1] : '';
   }
 
@@ -110,7 +110,7 @@
     }
 
     if (url && (url.hostname === 'hotmart.com' || url.hostname.endsWith('.hotmart.com')) &&
-        /\\/club\\//i.test(url.pathname)) {
+        /\/club\//i.test(url.pathname)) {
       track('click_free_preview', {
         product_name: productId,
         product_label: productLabel,
