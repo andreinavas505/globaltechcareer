@@ -1,1 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><defs><linearGradient id="b" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#1685ff"/><stop offset="1" stop-color="#22c8db"/></linearGradient><linearGradient id="g" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#00b98d"/><stop offset="1" stop-color="#56e6ad"/></linearGradient><linearGradient id="o" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#ff9b26"/><stop offset="1" stop-color="#ffbd45"/></linearGradient></defs><path d="M5 49 13 30 23 30 16 49Z" fill="url(#b)"/><path d="M22 49 33 15 43 15 33 49Z" fill="url(#g)"/><path d="M39 49 51 5 61 5 50 49Z" fill="url(#o)"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="title desc">
+<title id="title">Global Tech Career mark</title>
+<desc id="desc">A white cloud surrounding three ascending blue, green and orange bars, with a teal arrow rising upward.</desc>
+<defs>
+  <linearGradient id="blue" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#1747d1"/><stop offset="1" stop-color="#16b9f4"/></linearGradient>
+  <linearGradient id="green" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#079b70"/><stop offset="1" stop-color="#65efb4"/></linearGradient>
+  <linearGradient id="orange" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#f04a12"/><stop offset="1" stop-color="#ff9b1a"/></linearGradient>
+  <linearGradient id="arrow" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#48e8ca"/><stop offset="1" stop-color="#00d7c6"/></linearGradient>
+</defs>
+<path d="M15 70.5c-7.2-1.4-11.5-7.1-11.5-14.1 0-7.7 5.9-13.9 13.5-14.5 2.2-12.2 12.9-21 25.2-20.5C48.7 8.6 63.8 3.2 77 9.8c9.1 4.6 14.5 13.7 14.5 23.8" fill="none" stroke="#fff" stroke-width="5.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="24" y="49" width="12" height="25" rx="2.5" fill="url(#blue)"/>
+<rect x="41" y="35" width="12" height="39" rx="2.5" fill="url(#green)"/>
+<rect x="58" y="19" width="12" height="55" rx="2.5" fill="url(#orange)"/>
+<path d="M12 78.5c20.5 2.3 39.6-1.1 54.4-14.2 8.3-7.3 13.1-17.3 18.3-29.4" fill="none" stroke="url(#arrow)" stroke-width="6" stroke-linecap="round"/>
+<path d="m72.5 32.5 17.8-8.1-1.6 19.5-5.4-7.8-10.8-3.6Z" fill="#00d7c6"/>
+</svg>
