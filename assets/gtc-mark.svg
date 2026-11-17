@@ -1,16 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="title desc">
-<title id="title">Global Tech Career mark</title>
-<desc id="desc">A white cloud surrounding three ascending blue, green and orange bars, with a teal arrow rising upward.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+<title id="title">Global Tech Career AI mark</title>
+<desc id="desc">A connected neural network with an AI core and an upward trajectory.</desc>
 <defs>
-  <linearGradient id="blue" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#1747d1"/><stop offset="1" stop-color="#16b9f4"/></linearGradient>
-  <linearGradient id="green" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#079b70"/><stop offset="1" stop-color="#65efb4"/></linearGradient>
-  <linearGradient id="orange" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#f04a12"/><stop offset="1" stop-color="#ff9b1a"/></linearGradient>
-  <linearGradient id="arrow" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#48e8ca"/><stop offset="1" stop-color="#00d7c6"/></linearGradient>
+ <linearGradient id="core" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#147cff"/><stop offset=".52" stop-color="#16d4c4"/><stop offset="1" stop-color="#9b7bff"/></linearGradient>
+ <linearGradient id="rise" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#19d8b4"/><stop offset="1" stop-color="#42e4f2"/></linearGradient>
 </defs>
-<path d="M15 70.5c-7.2-1.4-11.5-7.1-11.5-14.1 0-7.7 5.9-13.9 13.5-14.5 2.2-12.2 12.9-21 25.2-20.5C48.7 8.6 63.8 3.2 77 9.8c9.1 4.6 14.5 13.7 14.5 23.8" fill="none" stroke="#fff" stroke-width="5.4" stroke-linecap="round" stroke-linejoin="round"/>
-<rect x="24" y="49" width="12" height="25" rx="2.5" fill="url(#blue)"/>
-<rect x="41" y="35" width="12" height="39" rx="2.5" fill="url(#green)"/>
-<rect x="58" y="19" width="12" height="55" rx="2.5" fill="url(#orange)"/>
-<path d="M12 78.5c20.5 2.3 39.6-1.1 54.4-14.2 8.3-7.3 13.1-17.3 18.3-29.4" fill="none" stroke="url(#arrow)" stroke-width="6" stroke-linecap="round"/>
-<path d="m72.5 32.5 17.8-8.1-1.6 19.5-5.4-7.8-10.8-3.6Z" fill="#00d7c6"/>
+<g fill="none" stroke="url(#core)" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
+ <path d="M32 7v8M17 15l6 7M47 15l-6 7M10 31h9M45 31h9M17 48l7-7M47 48l-7-7M32 49v8"/>
+ <path d="M23 22 28 27M41 22 36 27M19 31l8 0M37 31h8M24 41l5-5M40 41l-5-5"/>
+</g>
+<g fill="#071b31" stroke="url(#core)" stroke-width="2.4">
+ <circle cx="32" cy="8" r="3.8"/><circle cx="15" cy="13" r="3.8"/><circle cx="49" cy="13" r="3.8"/>
+ <circle cx="8" cy="31" r="3.8"/><circle cx="56" cy="31" r="3.8"/><circle cx="15" cy="50" r="3.8"/><circle cx="49" cy="50" r="3.8"/><circle cx="32" cy="57" r="3.8"/>
+</g>
+<rect x="21" y="23" width="22" height="22" rx="7" fill="#092b45" stroke="url(#core)" stroke-width="2.8"/>
+<path d="M27 37v-7l5-3 5 3v7l-5 3-5-3Z" fill="none" stroke="#eaffff" stroke-width="1.8" stroke-linejoin="round"/>
+<path d="M32 27v13M27 30l10 7M37 30l-10 7" stroke="#4be6dc" stroke-width="1.35" stroke-linecap="round"/>
+<path d="M7 55c13 2 25-1 34-9 6-5 10-12 13-21" fill="none" stroke="url(#rise)" stroke-width="3.4" stroke-linecap="round"/>
+<path d="m46 25 9-7 1 12-4-4-6-1Z" fill="#38e4d0"/>
 </svg>
