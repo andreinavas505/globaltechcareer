@@ -1,5 +1,5 @@
-/* Global Tech Career identity system — three rising signal bars */
-.gtc-brand-symbol,.brandmark,.gtc-mark,.gtc-logo i{background-image:url('/assets/gtc-mark.svg')!important;background-position:center!important;background-repeat:no-repeat!important;background-size:contain!important;border:0!important;border-radius:0!important;background-color:transparent!important;color:transparent!important;font-size:0!important;line-height:0!important;display:inline-block!important;width:38px!important;height:38px!important;min-width:38px!important;padding:0!important;box-shadow:none!important;vertical-align:middle!important}
+/* Global Tech Career identity system — AI neural-network mark */
+.gtc-brand-symbol,.brandmark,.gtc-mark,.gtc-logo i{background-image:url('/assets/gtc-mark.svg?v=20261116a')!important;background-position:center!important;background-repeat:no-repeat!important;background-size:contain!important;border:0!important;border-radius:0!important;background-color:transparent!important;color:transparent!important;font-size:0!important;line-height:0!important;display:inline-block!important;width:38px!important;height:38px!important;min-width:38px!important;padding:0!important;box-shadow:none!important;vertical-align:middle!important}
 .gtc-logo i{width:44px!important;height:42px!important}
 .brandmark,.gtc-mark{width:40px!important;height:40px!important}
 .gtc-home-hero{background:radial-gradient(ellipse at 78% 48%,rgba(0,190,190,.18),transparent 45%),linear-gradient(105deg,#04172b 0%,#082943 58%,#071b32 100%)!important;position:relative;isolation:isolate;overflow:hidden}
@@ -20,7 +20,7 @@
 .gtc-home-nav{background:#03172cfa!important;border-bottom:1px solid #1b4560!important}
 .gtc-home-nav>div{max-width:1420px!important;min-height:72px!important;padding:0 28px!important;gap:22px!important}
 .gtc-logo{font-size:21px!important;gap:10px!important;white-space:nowrap}
-.gtc-logo i{background-image:url('/assets/gtc-mark.svg')!important;background-size:contain!important;background-position:center!important;background-repeat:no-repeat!important;width:48px!important;height:46px!important;min-width:48px!important}
+.gtc-logo i{background-image:url('/assets/gtc-mark.svg?v=20261116a')!important;background-size:contain!important;background-position:center!important;background-repeat:no-repeat!important;width:48px!important;height:46px!important;min-width:48px!important}
 .gtc-navlinks{gap:clamp(12px,1.6vw,26px)!important;align-items:center!important}
 .gtc-navlinks a{font-size:13px!important;white-space:nowrap!important}
 .gtc-navlinks .gtc-nav-cta{padding:13px 19px!important;border-radius:11px!important;background:#08d9d1!important;color:#03233a!important;font-weight:850!important}
@@ -285,7 +285,7 @@
 
 /* Unified brand mark and real specialty photography */
 .gtc-logo i,.gtc-mark,.brandmark,.gtc-brand-symbol{
-  background-image:url('/assets/gtc-mark.svg')!important;
+  background-image:url('/assets/gtc-mark.svg?v=20261116a')!important;
   background-position:center!important;background-repeat:no-repeat!important;
   background-size:contain!important;background-color:transparent!important;
   border:0!important;border-radius:0!important;transform:none!important;
